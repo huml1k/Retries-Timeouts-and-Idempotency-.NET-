@@ -6,14 +6,23 @@ namespace APIGateway.Routes
     {
         public string Uri { get; set; }
 
-        public Destionation(string uri) 
+        public bool RequiresAuthentication { get; set; }
+
+        public Destionation(string uri, bool requiresAuthentication)
         {
             Uri = uri;
+            RequiresAuthentication = requiresAuthentication;
+        }
+
+        public Destionation(string uri) 
+            : this(uri, false) 
+        {
         }
 
         private Destionation() 
         {
             Uri = "/";
+            RequiresAuthentication = false;
         }
 
         private string CreateDestinationUri(HttpRequest request) 

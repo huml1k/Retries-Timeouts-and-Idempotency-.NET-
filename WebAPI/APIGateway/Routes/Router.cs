@@ -1,4 +1,5 @@
 ﻿using APIGateway.Parser;
+using APIGateway.Routes.Model;
 using Microsoft.Extensions.Primitives;
 using System.Net;
 
@@ -6,14 +7,14 @@ namespace APIGateway.Routes
 {
     public class Router
     {
-        public List<Route> Routes { get; set; }
+        public List<Routes.Model.Routes> Routes { get; set; }
         public Destionation AuthenticationService { get; set; }
 
         public Router(string routeConfigFilePath) 
         {
             var router = JsonParser.LoadFromFile<dynamic>(routeConfigFilePath);
 
-            Routes = JsonParser.Deserialize<List<Route>>(Convert.ToString(router.routes));
+            Routes = JsonParser.Deserialize<List<Routes.Model.Routes>>(Convert.ToString(router.routes));
 
             AuthenticationService = JsonParser.Deserialize(Convert.ToString(router.authenticationService));
         }
@@ -23,17 +24,19 @@ namespace APIGateway.Routes
             string path = request.Path.ToString();
             string basePath = '/' + path.Split('/')[1];
 
-            Destionation destination;
-            try
+
+            Destionation destionation;
+            try 
             {
-                destination = Routes.First(r => r. Equals(basePath)).Defaults;
-            }
-            catch
-            {
-                return ConstructErrorMessage("The path could not be found.");
+                destionation = Routes.First(r => r.Endpoint.Equals(basePath)).Destionation;
             }
 
-            if (destination.RequiresAuthentication)
+            catch
+            {
+                return ConstructErrorMessage("Путь не может быть найден");
+            }
+
+            if (destionation.RequiresAuthentication) 
             {
                 string token = request.Headers["token"];
                 request.Query.Append(new KeyValuePair<string, StringValues>("token", new StringValues(token)));
@@ -41,7 +44,7 @@ namespace APIGateway.Routes
                 if (!authResponse.IsSuccessStatusCode) return ConstructErrorMessage("Authentication failed.");
             }
 
-            return await destination.SendRequest(request);
+            return await destionation.SendRequest(request);
         }
 
         private HttpResponseMessage ConstructErrorMessage(string error)
