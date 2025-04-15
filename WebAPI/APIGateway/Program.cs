@@ -1,4 +1,8 @@
 
+using APIGateway.IdempotencyDb;
+using APIGateway.IdempotencyDb.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 namespace APIGateway
 {
     public class Program
@@ -13,7 +17,12 @@ namespace APIGateway
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            builder.Services.AddDbContext<MyDbContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(MyDbContext))));
+            builder.Services.AddScoped<IIdempotencyRepository, IdempotencyRepository>();
+            
+            builder.Services.AddScoped<IdempotencyService>();
+            
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -26,9 +35,10 @@ namespace APIGateway
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
-
+            
             app.MapControllers();
+            
+            app.MapGet("/x", () => $"{app.Configuration.GetConnectionString(nameof(MyDbContext)).ToString()}");
 
             app.Run();
         }

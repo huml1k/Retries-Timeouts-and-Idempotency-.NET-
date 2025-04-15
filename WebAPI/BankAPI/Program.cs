@@ -28,6 +28,8 @@ namespace BankAPI
 
 
             app.MapControllers();
+            
+            app.MapGet("/getBank", () => "Hello World!");
 
             app.Run();
         }

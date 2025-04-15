@@ -8,7 +8,7 @@ namespace APIGateway.Routes
     public class Router
     {
         public List<Routes.Model.Routes> Routes { get; set; }
-        public Destionation AuthenticationService { get; set; }
+        public Destination AuthenticationService { get; set; }
 
         public Router(string routeConfigFilePath) 
         {
@@ -25,10 +25,10 @@ namespace APIGateway.Routes
             string basePath = '/' + path.Split('/')[1];
 
 
-            Destionation destionation;
+            Destination destination;
             try 
             {
-                destionation = Routes.First(r => r.Endpoint.Equals(basePath)).Destionation;
+                destination = Routes.First(r => r.Endpoint.Equals(basePath)).Destination;
             }
 
             catch
@@ -36,7 +36,7 @@ namespace APIGateway.Routes
                 return ConstructErrorMessage("Путь не может быть найден");
             }
 
-            if (destionation.RequiresAuthentication) 
+            if (destination.RequiresAuthentication) 
             {
                 string token = request.Headers["token"];
                 request.Query.Append(new KeyValuePair<string, StringValues>("token", new StringValues(token)));
@@ -44,7 +44,7 @@ namespace APIGateway.Routes
                 if (!authResponse.IsSuccessStatusCode) return ConstructErrorMessage("Authentication failed.");
             }
 
-            return await destionation.SendRequest(request);
+            return await destination.SendRequest(request);
         }
 
         private HttpResponseMessage ConstructErrorMessage(string error)
