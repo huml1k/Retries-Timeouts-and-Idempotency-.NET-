@@ -13,6 +13,16 @@ namespace BankAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -22,6 +32,7 @@ namespace BankAPI
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("AllowAll");
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
@@ -29,7 +40,7 @@ namespace BankAPI
 
             app.MapControllers();
 
-            app.Run();
+            app.Run("http://0.0.0.0:80");
         }
     }
 }

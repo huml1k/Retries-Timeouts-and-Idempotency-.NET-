@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "endpoint": "/",
+      "destination": {
+        "uri": "http://localhost:8080/",
+        "requiresAuthentication": "false"
+      }
+    },
+    {
+      "endpoint": "/getBank",
+      "destination": {
+        "uri": "http://bankapi/BankOperation/Testing",
+        "requiresAuthentication": "false"
+      }
+    }
+  ]
+}

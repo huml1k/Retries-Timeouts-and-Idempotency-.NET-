@@ -1,0 +1,41 @@
+version: '3.9'
+
+
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d      
+    networks:
+      - app-network
+    depends_on:
+      - apigateway
+      - bankapi 
+
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    ports:
+      - "8080:8080"
+    build:
+      context: ./APIGateway               
+      dockerfile: Dockerfile              
+    networks:
+      - app-network                      
+
+
+  bankapi:
+    image: ${DOCKER_REGISTRY-}bankapi    
+    ports:
+      - "8077:80"
+    build:
+      context: ./BankAPI                  
+      dockerfile: Dockerfile
+    networks:
+      - app-network     
+
+networks:                                 
+  app-network:
+    driver: bridge

@@ -3,6 +3,6 @@
     public class Routes
     {
         public string Endpoint { get; set; }
-        public Destionation Destionation { get; set; }
+        public Destination Destination { get; set; }
     }
 }

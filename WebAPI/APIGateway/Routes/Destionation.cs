@@ -1,28 +1,24 @@
-﻿using System.Text;
+﻿using System.Net.Http;
+using System.Text;
 
 namespace APIGateway.Routes
 {
-    public class Destionation
+    public class Destination
     {
         public string Uri { get; set; }
 
         public bool RequiresAuthentication { get; set; }
 
-        public Destionation(string uri, bool requiresAuthentication)
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public Destination(
+            string uri,
+            bool requiresAuthentication,
+            IHttpClientFactory httpClientFactory)
         {
             Uri = uri;
             RequiresAuthentication = requiresAuthentication;
-        }
-
-        public Destionation(string uri) 
-            : this(uri, false) 
-        {
-        }
-
-        private Destionation() 
-        {
-            Uri = "/";
-            RequiresAuthentication = false;
+            _httpClientFactory = httpClientFactory;
         }
 
         private string CreateDestinationUri(HttpRequest request) 
@@ -41,22 +37,40 @@ namespace APIGateway.Routes
             return Uri + endpoint + queryString;
         }
 
-        public async Task<HttpResponseMessage> SendRequest(HttpRequest request) 
+        public async Task<HttpResponseMessage> SendRequest(HttpRequest request)
         {
+            request.EnableBuffering();
+
             string requestContent;
-            using (Stream recieveStream = request.Body) 
+            using (var reader = new StreamReader(
+                request.Body,
+                Encoding.UTF8,
+                detectEncodingFromByteOrderMarks: false,
+                bufferSize: 4096,
+                leaveOpen: true)) 
             {
-                using (StreamReader readStream = new StreamReader(recieveStream, encoding: Encoding.UTF8)) 
+                requestContent = await reader.ReadToEndAsync();
+                request.Body.Position = 0; 
+            }
+
+            using var client = _httpClientFactory.CreateClient();
+
+            var newRequest = new HttpRequestMessage(
+                new HttpMethod(request.Method),
+                CreateDestinationUri(request))
+            {
+                Content = new StringContent(requestContent, Encoding.UTF8, request.ContentType)
+            };
+
+            foreach (var header in request.Headers)
+            {
+                if (!newRequest.Headers.TryAddWithoutValidation(header.Key, header.Value.ToArray()))
                 {
-                    requestContent = readStream.ReadToEnd();
+                    newRequest.Content?.Headers.TryAddWithoutValidation(header.Key, header.Value.ToArray());
                 }
             }
 
-            HttpClient client = new HttpClient();
-            HttpRequestMessage newRequest = new HttpRequestMessage(new HttpMethod(request.Method), CreateDestinationUri(request));
-            HttpResponseMessage response = await client.SendAsync(newRequest);
-
-            return response;
+            return await client.SendAsync(newRequest);
         }
     }
 }
