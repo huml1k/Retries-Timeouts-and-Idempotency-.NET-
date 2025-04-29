@@ -18,7 +18,8 @@ namespace APIGateway
             // Add services to the container.
             builder.Services.AddDbContext<MyDbContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(MyDbContext))));
-            builder.Services.AddScoped<IIdempotencyRepository, IdempotencyRepository>();
+            
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -33,7 +34,8 @@ namespace APIGateway
                 var httpClientFactory = provider.GetRequiredService<IHttpClientFactory>();
                 return new Router(routeManager, httpClientFactory);
             });
-            // builder.Services.AddScoped<IIdempotencyService, IdempotencyService>();
+            builder.Services.AddScoped<IIdempotencyRepository, IdempotencyRepository>();
+            builder.Services.AddScoped<IdempotencyService>();
 
             var app = builder.Build();
             app.UseMiddleware<IdempotencyMiddleware>();

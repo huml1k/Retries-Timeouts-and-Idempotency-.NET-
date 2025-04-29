@@ -1,6 +1,10 @@
-﻿namespace APIGateway.IdempotencyDb.Repositories;
+﻿using APIGateway.IdempotencyDb.Entities;
 
-public class IIdempotencyRepository
+namespace APIGateway.IdempotencyDb.Repositories;
+
+public interface IIdempotencyRepository
 {
+    public Task<bool> ContainsIdempotencyKey(IdempotencyKeyEntity key);
     
+    public Task AddIdempotencyKey(IdempotencyKeyEntity key);
 }

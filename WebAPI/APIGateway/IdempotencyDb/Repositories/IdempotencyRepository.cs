@@ -20,4 +20,9 @@ public class IdempotencyRepository : IIdempotencyRepository
         }
         return false;
     }
+
+    public async Task AddIdempotencyKey(IdempotencyKeyEntity key)
+    {
+        
+    }
 }

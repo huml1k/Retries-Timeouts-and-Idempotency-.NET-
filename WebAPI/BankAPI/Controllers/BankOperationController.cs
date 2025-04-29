@@ -14,5 +14,11 @@ namespace BankAPI.Controllers
 
         [HttpGet("health")]
         public IActionResult HealthCheck() => Ok();
+        
+        [HttpPost("TestingPost")]
+        public IActionResult PayToUser([FromBody] string userId, float amount)
+        {
+            return Ok(Response.Headers.ToString());
+        }
     }
 }
