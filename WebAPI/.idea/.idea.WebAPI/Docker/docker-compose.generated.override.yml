@@ -1,0 +1,40 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.9"
+services:
+  apigateway:
+    build:
+      context: "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/APIGateway.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "apigateway:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\emirh\\.nuget\\packages:/home/app/.nuget/packages"
+    - "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway:/app:rw"
+    - "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI:/src:rw"
+    working_dir: "/app"
+  bankapi:
+    build:
+      context: "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/BankAPI.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "bankapi:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\emirh\\.nuget\\packages:/home/app/.nuget/packages"
+    - "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI:/app:rw"
+    - "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI:/src:rw"
+    working_dir: "/app"

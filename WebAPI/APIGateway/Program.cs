@@ -1,5 +1,10 @@
 
+using APIGateway.IdempotencyDb;
+using APIGateway.IdempotencyDb.Repositories;
+using APIGateway.Middlewares;
 using APIGateway.Routes;
+using APIGateway.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace APIGateway
@@ -11,7 +16,9 @@ namespace APIGateway
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.Services.AddDbContext<MyDbContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(MyDbContext))));
+            builder.Services.AddScoped<IIdempotencyRepository, IdempotencyRepository>();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -26,9 +33,10 @@ namespace APIGateway
                 var httpClientFactory = provider.GetRequiredService<IHttpClientFactory>();
                 return new Router(routeManager, httpClientFactory);
             });
+            // builder.Services.AddScoped<IIdempotencyService, IdempotencyService>();
 
             var app = builder.Build();
-
+            app.UseMiddleware<IdempotencyMiddleware>();
             app.Run(async (context) =>
             {
                 var router = context.RequestServices.GetRequiredService<Router>();
