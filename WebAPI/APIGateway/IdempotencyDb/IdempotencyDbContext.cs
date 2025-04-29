@@ -3,13 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace APIGateway.IdempotencyDb
 {
-    public class MyDbContext : DbContext
+    public class IdempotencyDbContext : DbContext
     {
         public DbSet<HttpDataEntity> httpDataEntities { get; set; }
 
         public DbSet<IdempotencyKeyEntity> idempotencyKeyEntities { get; set; }
 
-        public MyDbContext(DbContextOptions<MyDbContext> optionsBuilder) : base(optionsBuilder) { }
+        public IdempotencyDbContext(DbContextOptions<IdempotencyDbContext> optionsBuilder) : base(optionsBuilder) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

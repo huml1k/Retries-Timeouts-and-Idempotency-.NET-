@@ -1,24 +1,28 @@
 ﻿using APIGateway.IdempotencyDb.Entities;
 using APIGateway.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace APIGateway.IdempotencyDb.Repositories;
 
 public class IdempotencyRepository : IIdempotencyRepository
 {
-    private readonly MyDbContext _context;
+    private readonly IdempotencyDbContext _context;
 
-    public IdempotencyRepository(MyDbContext context)
+    public IdempotencyRepository(IdempotencyDbContext context)
     {
         _context = context;
     }
 
     public async Task<bool> ContainsIdempotencyKey(IdempotencyKeyEntity key)
     {
-        if (_context.idempotencyKeyEntities.Where(k => k.IdempotencyKey == key.IdempotencyKey).Count() != 0)
-        {
-            return true;
-        }
-        return false;
+        if (key == null) throw new ArgumentNullException(nameof(key));
+        if (string.IsNullOrWhiteSpace(key.IdempotencyKey)) 
+            throw new ArgumentException("Idempotency key cannot be null or empty");
+
+        return await _context.idempotencyKeyEntities
+            .AsNoTracking()
+            .AnyAsync(k => k.IdempotencyKey == key.IdempotencyKey)
+            .ConfigureAwait(false); 
     }
 
     public async Task AddIdempotencyKey(IdempotencyKeyEntity key)

@@ -16,8 +16,8 @@ namespace APIGateway
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<MyDbContext>(options =>
-                options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(MyDbContext))));
+            builder.Services.AddDbContext<IdempotencyDbContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(IdempotencyDbContext))));
             
 
             builder.Services.AddControllers();
