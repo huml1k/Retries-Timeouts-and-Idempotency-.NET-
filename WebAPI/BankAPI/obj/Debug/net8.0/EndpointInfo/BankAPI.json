@@ -16,6 +16,18 @@
           }
         }
       }
+    },
+    "/BankOperation/health": {
+      "get": {
+        "tags": [
+          "BankOperation"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": { }

@@ -48,19 +48,24 @@ namespace APIGateway.Routes
                 Encoding.UTF8,
                 detectEncodingFromByteOrderMarks: false,
                 bufferSize: 4096,
-                leaveOpen: true)) 
+                leaveOpen: true))
             {
                 requestContent = await reader.ReadToEndAsync();
-                request.Body.Position = 0; 
+                request.Body.Position = 0;
             }
 
             using var client = _httpClientFactory.CreateClient();
+
+            // Extract media type without parameters
+            var mediaType = request.ContentType?.Split(';')[0].Trim();
+            // Default to "text/plain" if ContentType is not provided
+            mediaType ??= "text/plain";
 
             var newRequest = new HttpRequestMessage(
                 new HttpMethod(request.Method),
                 CreateDestinationUri(request))
             {
-                Content = new StringContent(requestContent, Encoding.UTF8, request.ContentType)
+                Content = new StringContent(requestContent, Encoding.UTF8, mediaType)
             };
 
             foreach (var header in request.Headers)

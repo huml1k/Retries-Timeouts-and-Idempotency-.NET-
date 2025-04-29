@@ -27,7 +27,7 @@ services:
   bankapi:
     image: ${DOCKER_REGISTRY-}bankapi    
     ports:
-      - "8077:8077"
+      - "8077:80"
     build:
       context: ./BankAPI                  
       dockerfile: Dockerfile

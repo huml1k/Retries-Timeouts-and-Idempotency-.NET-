@@ -43,8 +43,6 @@ namespace APIGateway
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseAuthorization();
 
 

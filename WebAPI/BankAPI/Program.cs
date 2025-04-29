@@ -33,7 +33,6 @@ namespace BankAPI
             }
 
             app.UseCors("AllowAll");
-            app.UseHttpsRedirection();
 
             app.UseAuthorization();
 

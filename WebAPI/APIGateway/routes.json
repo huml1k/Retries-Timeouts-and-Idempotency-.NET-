@@ -3,7 +3,7 @@
     {
       "endpoint": "/",
       "destination": {
-        "uri": "http://localhost:8080/",
+        "uri": "http://apigateway:8080/swagger/index.html",
         "requiresAuthentication": "false"
       }
     },
@@ -11,6 +11,13 @@
       "endpoint": "/getBank",
       "destination": {
         "uri": "http://bankapi/BankOperation/Testing",
+        "requiresAuthentication": "false"
+      }
+    },
+    {
+      "endpoint": "/health",
+      "destination": {
+        "uri": "http://bankapi/BankOperation/health",
         "requiresAuthentication": "false"
       }
     }
