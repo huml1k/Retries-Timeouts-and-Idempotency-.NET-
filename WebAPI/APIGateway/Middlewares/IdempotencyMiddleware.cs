@@ -5,7 +5,7 @@ namespace APIGateway.Middlewares;
 public class IdempotencyMiddleware
 {
     private readonly RequestDelegate _next;
-    // private readonly IdempotencyService _idempotencyService;
+    private readonly IdempotencyService _idempotencyService;
  
     public IdempotencyMiddleware(RequestDelegate next)
     {
@@ -19,6 +19,7 @@ public class IdempotencyMiddleware
         {
             if(!context.Request.Headers.ContainsKey("Idempotency-Key"))
             {
+                // var key = await _idempotencyService.GenerateIdempotencyKey();
                 context.Response.Headers.Add("Idempotency-Key", "" + Guid.NewGuid().ToString());
             }
         }
