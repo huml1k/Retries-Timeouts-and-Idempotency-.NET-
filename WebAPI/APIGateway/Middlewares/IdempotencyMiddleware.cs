@@ -14,7 +14,7 @@ public class IdempotencyMiddleware
  
     public async Task InvokeAsync(HttpContext context)
     {
-        context.Response.Headers.Add("KeyCheck", "Чекнули ключ йоу");
+        context.Response.Headers.Add("KeyCheck", "qwe");
         if(context.Request.Method == "POST")
         {
             if(!context.Request.Headers.ContainsKey("Idempotency-Key"))
