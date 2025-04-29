@@ -1,7 +1,5 @@
 version: '3.9'
 
-
-
 services:
   nginx:
     image: nginx:latest
@@ -29,7 +27,7 @@ services:
   bankapi:
     image: ${DOCKER_REGISTRY-}bankapi    
     ports:
-      - "8077:80"
+      - "8077:8077"
     build:
       context: ./BankAPI                  
       dockerfile: Dockerfile

@@ -9,6 +9,7 @@ namespace APIGateway.Routes
 
         public bool RequiresAuthentication { get; set; }
 
+
         private readonly IHttpClientFactory _httpClientFactory;
 
         public Destination(
