@@ -3,7 +3,18 @@
     {
       "endpoint": "/",
       "destination": {
+<<<<<<< Updated upstream
         "uri": "http://apigateway:8080/swagger/index.html",
+=======
+        "uri": "http://apigateway/View/",
+        "requiresAuthentication": "false"
+      }
+    },
+    {
+      "endpoint": "/login",
+      "destination": {
+        "uri": "http://apigateway/View/",
+>>>>>>> Stashed changes
         "requiresAuthentication": "false"
       }
     },
@@ -15,9 +26,15 @@
       }
     },
     {
+<<<<<<< Updated upstream
       "endpoint": "/health",
       "destination": {
         "uri": "http://bankapi/BankOperation/health",
+=======
+      "endpoint": "/postBank",
+      "destination": {
+        "uri": "http://bankapi/BankOperation/TestingPost",
+>>>>>>> Stashed changes
         "requiresAuthentication": "false"
       }
     }

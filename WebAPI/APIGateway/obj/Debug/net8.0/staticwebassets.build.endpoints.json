@@ -1,5 +1,170 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "js/scripts.cnn61pc1vq.js",
+      "AssetFile": "js/scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4432"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 18:58:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cnn61pc1vq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc="
+        },
+        {
+          "Name": "label",
+          "Value": "js/scripts.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/scripts.js",
+      "AssetFile": "js/scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4432"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 18:58:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc="
+        }
+      ]
+    },
+    {
+      "Route": "styles/stryles.css",
+      "AssetFile": "styles/stryles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:40:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE="
+        }
+      ]
+    },
+    {
+      "Route": "styles/stryles.dcl01e99yo.css",
+      "AssetFile": "styles/stryles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:40:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dcl01e99yo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE="
+        },
+        {
+          "Name": "label",
+          "Value": "styles/stryles.css"
+        }
+      ]
+    }
+  ]
 }

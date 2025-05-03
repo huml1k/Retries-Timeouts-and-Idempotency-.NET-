@@ -3,7 +3,18 @@
     {
       "endpoint": "/",
       "destination": {
+<<<<<<< Updated upstream
         "uri": "http://apigateway:8080/swagger/index.html",
+=======
+        "uri": "http://apigateway/View/",
+        "requiresAuthentication": "false"
+      }
+    },
+    {
+      "endpoint": "/login",
+      "destination": {
+        "uri": "http://apigateway/View/",
+>>>>>>> Stashed changes
         "requiresAuthentication": "false"
       }
     },

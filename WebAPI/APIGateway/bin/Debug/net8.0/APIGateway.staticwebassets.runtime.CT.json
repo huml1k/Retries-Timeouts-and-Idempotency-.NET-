@@ -1,0 +1,45 @@
+{
+  "ContentRoots": [
+    "/app/wwwroot/"
+  ],
+  "Root": {
+    "Children": {
+      "js": {
+        "Children": {
+          "scripts.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "js/scripts.js"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "styles": {
+        "Children": {
+          "stryles.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "styles/stryles.css"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      }
+    },
+    "Asset": null,
+    "Patterns": [
+      {
+        "ContentRootIndex": 0,
+        "Pattern": "**",
+        "Depth": 0
+      }
+    ]
+  }
+}

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 name: dockercompose12032743513600161995
 services:
   apigateway:
@@ -16,17 +17,28 @@ services:
       - Major
       - /VSTools/DistrolessHelper/DistrolessHelper.dll
       - --wait
+=======
+name: dockercompose6273939623519995294
+services:
+  apigateway:
+    build:
+      context: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+      dockerfile: Dockerfile
+>>>>>>> Stashed changes
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
     image: apigateway
+<<<<<<< Updated upstream
     labels:
       com.microsoft.visual-studio.project-name: APIGateway
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/APIGateway.dll"'
       com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
+=======
+>>>>>>> Stashed changes
     networks:
       app-network: null
     ports:
@@ -40,32 +52,51 @@ services:
       - mode: ingress
         target: 8081
         protocol: tcp
+<<<<<<< Updated upstream
     tty: true
     volumes:
       - type: bind
         source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+=======
+    volumes:
+      - type: bind
+        source: C:\Users\User\AppData\Roaming/Microsoft/UserSecrets
+>>>>>>> Stashed changes
         target: /home/app/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+=======
+        source: C:\Users\User\AppData\Roaming/Microsoft/UserSecrets
+>>>>>>> Stashed changes
         target: /root/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+=======
+        source: C:\Users\User\AppData\Roaming/ASP.NET/Https
+>>>>>>> Stashed changes
         target: /home/app/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+=======
+        source: C:\Users\User\AppData\Roaming/ASP.NET/Https
+>>>>>>> Stashed changes
         target: /root/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
+<<<<<<< Updated upstream
       - type: bind
         source: C:\Users\User\vsdbg\vs2017u5
         target: /remote_debugger
@@ -106,6 +137,13 @@ services:
       com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
+=======
+  bankapi:
+    build:
+      context: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+      dockerfile: Dockerfile
+    image: bankapi
+>>>>>>> Stashed changes
     networks:
       app-network: null
     ports:
@@ -113,6 +151,7 @@ services:
         target: 80
         published: "8077"
         protocol: tcp
+<<<<<<< Updated upstream
     tty: true
     volumes:
       - type: bind
@@ -156,6 +195,8 @@ services:
         read_only: true
         bind:
           create_host_path: true
+=======
+>>>>>>> Stashed changes
   nginx:
     depends_on:
       apigateway:
@@ -174,11 +215,19 @@ services:
         protocol: tcp
     volumes:
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+>>>>>>> Stashed changes
         target: /etc/nginx/conf.d
         bind:
           create_host_path: true
 networks:
   app-network:
+<<<<<<< Updated upstream
     name: dockercompose12032743513600161995_app-network
+=======
+    name: dockercompose6273939623519995294_app-network
+>>>>>>> Stashed changes
     driver: bridge

@@ -16,7 +16,7 @@ services:
   apigateway:
     image: ${DOCKER_REGISTRY-}apigateway
     ports:
-      - "8080:8080"
+      - "8080:80"
     build:
       context: ./APIGateway               
       dockerfile: Dockerfile              

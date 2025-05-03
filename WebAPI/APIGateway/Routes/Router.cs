@@ -62,7 +62,7 @@ namespace APIGateway.Routes
             }
             catch
             {
-                return ConstructErrorMessage("Такого пути не существует");
+                return ConstructErrorMessage("There is no such way");
             }
 
             if (destination.RequiresAuthentication)

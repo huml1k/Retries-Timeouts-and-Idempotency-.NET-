@@ -1,8 +1,16 @@
+<<<<<<< Updated upstream
 name: dockercompose12032743513600161995
 services:
   apigateway:
     build:
       context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+=======
+name: dockercompose6273939623519995294
+services:
+  apigateway:
+    build:
+      context: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+>>>>>>> Stashed changes
       dockerfile: Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -70,12 +78,20 @@ services:
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+>>>>>>> Stashed changes
         target: /app
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+>>>>>>> Stashed changes
         target: /src
         bind:
           create_host_path: true
@@ -110,7 +126,11 @@ services:
           create_host_path: true
   bankapi:
     build:
+<<<<<<< Updated upstream
       context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+=======
+      context: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+>>>>>>> Stashed changes
       dockerfile: Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -139,18 +159,30 @@ services:
       app-network: null
     ports:
       - mode: ingress
+<<<<<<< Updated upstream
         target: 8077
+=======
+        target: 80
+>>>>>>> Stashed changes
         published: "8077"
         protocol: tcp
     tty: true
     volumes:
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+>>>>>>> Stashed changes
         target: /app
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+>>>>>>> Stashed changes
         target: /src
         bind:
           create_host_path: true
@@ -225,11 +257,19 @@ services:
         protocol: tcp
     volumes:
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+>>>>>>> Stashed changes
         target: /etc/nginx/conf.d
         bind:
           create_host_path: true
 networks:
   app-network:
+<<<<<<< Updated upstream
     name: dockercompose12032743513600161995_app-network
+=======
+    name: dockercompose6273939623519995294_app-network
+>>>>>>> Stashed changes
     driver: bridge

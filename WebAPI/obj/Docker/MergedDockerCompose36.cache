@@ -1,14 +1,44 @@
+<<<<<<< Updated upstream
 name: dockercompose12032743513600161995
 services:
   apigateway:
     build:
       context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
       dockerfile: Dockerfile
+=======
+name: dockercompose6273939623519995294
+services:
+  apigateway:
+    build:
+      context: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+      dockerfile: Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: APIGateway
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+>>>>>>> Stashed changes
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
     image: apigateway
+<<<<<<< Updated upstream
+=======
+    labels:
+      com.microsoft.visual-studio.project-name: APIGateway
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/APIGateway.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+>>>>>>> Stashed changes
     networks:
       app-network: null
     ports:
@@ -22,43 +52,154 @@ services:
       - mode: ingress
         target: 8081
         protocol: tcp
+<<<<<<< Updated upstream
     volumes:
       - type: bind
         source: C:\Users\User\AppData\Roaming/Microsoft/UserSecrets
+=======
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+>>>>>>> Stashed changes
         target: /home/app/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\AppData\Roaming/Microsoft/UserSecrets
+=======
+        source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+>>>>>>> Stashed changes
         target: /root/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\AppData\Roaming/ASP.NET/Https
+=======
+        source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+>>>>>>> Stashed changes
         target: /home/app/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\AppData\Roaming/ASP.NET/Https
+=======
+        source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+>>>>>>> Stashed changes
         target: /root/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
+<<<<<<< Updated upstream
   bankapi:
     build:
       context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
       dockerfile: Dockerfile
     image: bankapi
+=======
+      - type: bind
+        source: C:\Users\User\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0
+        target: /VSTools
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+  bankapi:
+    build:
+      context: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+      dockerfile: Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+        LAUNCHING_FROM_VS: "true"
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: BankAPI
+    entrypoint:
+      - dotnet
+      - --roll-forward
+      - Major
+      - /VSTools/DistrolessHelper/DistrolessHelper.dll
+      - --wait
+    image: bankapi
+    labels:
+      com.microsoft.visual-studio.project-name: BankAPI
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/BankAPI.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+>>>>>>> Stashed changes
     networks:
       app-network: null
     ports:
       - mode: ingress
+<<<<<<< Updated upstream
         target: 8077
         published: "8077"
         protocol: tcp
+=======
+        target: 80
+        published: "8077"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\User\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0
+        target: /VSTools
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload
+        target: /HotReloadAgent
+        read_only: true
+        bind:
+          create_host_path: true
+>>>>>>> Stashed changes
   nginx:
     depends_on:
       apigateway:
@@ -77,11 +218,19 @@ services:
         protocol: tcp
     volumes:
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+>>>>>>> Stashed changes
         target: /etc/nginx/conf.d
         bind:
           create_host_path: true
 networks:
   app-network:
+<<<<<<< Updated upstream
     name: dockercompose12032743513600161995_app-network
+=======
+    name: dockercompose6273939623519995294_app-network
+>>>>>>> Stashed changes
     driver: bridge

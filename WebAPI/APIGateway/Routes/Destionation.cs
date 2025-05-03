@@ -22,7 +22,7 @@ namespace APIGateway.Routes
             _httpClientFactory = httpClientFactory;
         }
 
-        private string CreateDestinationUri(HttpRequest request) 
+        private string CreateDestinationUri(HttpRequest request)
         {
             string requestPath = request.Path.ToString();
             string queryString = request.QueryString.ToString();
@@ -30,7 +30,7 @@ namespace APIGateway.Routes
             string endpoint = "";
             var endpointSplit = requestPath.Substring(1).Split('/');
 
-            if (endpointSplit.Length > 1) 
+            if (endpointSplit.Length > 1)
             {
                 endpoint = endpointSplit[1];
             }

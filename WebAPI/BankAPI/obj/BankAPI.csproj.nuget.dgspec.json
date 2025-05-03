@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\User\\Desktop\\projects\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\BankAPI.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\User\\Desktop\\projects\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\BankAPI.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\User\\Desktop\\projects\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\obj\\",
+=======
+    "C:\\Users\\User\\Documents\\GitHub\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\BankAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\User\\Documents\\GitHub\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\BankAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\BankAPI.csproj",
+        "projectName": "BankAPI",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\BankAPI.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

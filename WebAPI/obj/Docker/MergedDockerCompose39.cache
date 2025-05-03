@@ -1,8 +1,16 @@
+<<<<<<< Updated upstream
 name: dockercompose12032743513600161995
 services:
   apigateway:
     build:
       context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+=======
+name: dockercompose6273939623519995294
+services:
+  apigateway:
+    build:
+      context: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+>>>>>>> Stashed changes
       dockerfile: Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -10,6 +18,10 @@ services:
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: APIGateway
+<<<<<<< Updated upstream
+=======
+      target: base
+>>>>>>> Stashed changes
     entrypoint:
       - dotnet
       - --roll-forward
@@ -20,10 +32,19 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
       ASPNETCORE_HTTPS_PORTS: "8081"
+<<<<<<< Updated upstream
     image: apigateway
     labels:
       com.microsoft.visual-studio.project-name: APIGateway
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/APIGateway.dll"'
+=======
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+    image: apigateway:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net8.0/APIGateway.dll"'
+>>>>>>> Stashed changes
       com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
@@ -67,11 +88,39 @@ services:
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+>>>>>>> Stashed changes
         source: C:\Users\User\vsdbg\vs2017u5
         target: /remote_debugger
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
+=======
+        source: C:\Users\User\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+>>>>>>> Stashed changes
         source: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0
         target: /VSTools
         read_only: true
@@ -85,7 +134,11 @@ services:
           create_host_path: true
   bankapi:
     build:
+<<<<<<< Updated upstream
       context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+=======
+      context: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+>>>>>>> Stashed changes
       dockerfile: Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -93,16 +146,30 @@ services:
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: BankAPI
+<<<<<<< Updated upstream
+=======
+      target: base
+>>>>>>> Stashed changes
     entrypoint:
       - dotnet
       - --roll-forward
       - Major
       - /VSTools/DistrolessHelper/DistrolessHelper.dll
       - --wait
+<<<<<<< Updated upstream
     image: bankapi
     labels:
       com.microsoft.visual-studio.project-name: BankAPI
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/BankAPI.dll"'
+=======
+    environment:
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: /.nuget/fallbackpackages
+    image: bankapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  "/app/bin/Debug/net8.0/BankAPI.dll"'
+>>>>>>> Stashed changes
       com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
@@ -110,17 +177,49 @@ services:
       app-network: null
     ports:
       - mode: ingress
+<<<<<<< Updated upstream
         target: 8077
+=======
+        target: 8079
+>>>>>>> Stashed changes
         published: "8077"
         protocol: tcp
     tty: true
     volumes:
       - type: bind
+<<<<<<< Updated upstream
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+        target: /app
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+        target: /src
+        bind:
+          create_host_path: true
+      - type: bind
+>>>>>>> Stashed changes
         source: C:\Users\User\vsdbg\vs2017u5
         target: /remote_debugger
         bind:
           create_host_path: true
       - type: bind
+<<<<<<< Updated upstream
+=======
+        source: C:\Users\User\.nuget\packages
+        target: /.nuget/packages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
+        target: /.nuget/fallbackpackages
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+>>>>>>> Stashed changes
         source: C:\Users\User\AppData\Roaming\ASP.NET\Https
         target: /root/.aspnet/https
         read_only: true
@@ -174,11 +273,19 @@ services:
         protocol: tcp
     volumes:
       - type: bind
+<<<<<<< Updated upstream
         source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+=======
+        source: C:\Users\User\Documents\GitHub\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+>>>>>>> Stashed changes
         target: /etc/nginx/conf.d
         bind:
           create_host_path: true
 networks:
   app-network:
+<<<<<<< Updated upstream
     name: dockercompose12032743513600161995_app-network
+=======
+    name: dockercompose6273939623519995294_app-network
+>>>>>>> Stashed changes
     driver: bridge

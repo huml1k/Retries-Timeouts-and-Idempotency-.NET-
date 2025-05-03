@@ -1,4 +1,11 @@
 
+<<<<<<< Updated upstream
+=======
+using APIGateway.IdempotencyDb;
+using APIGateway.IdempotencyDb.Repositories;
+using APIGateway.IdempotencyDb.Repositories.Interfaces;
+using APIGateway.Middlewares;
+>>>>>>> Stashed changes
 using APIGateway.Routes;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -15,6 +22,7 @@ namespace APIGateway
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddControllersWithViews();
             builder.Services.AddSwaggerGen();
             builder.Services.AddHttpClient();
 
@@ -26,8 +34,17 @@ namespace APIGateway
                 var httpClientFactory = provider.GetRequiredService<IHttpClientFactory>();
                 return new Router(routeManager, httpClientFactory);
             });
+<<<<<<< Updated upstream
 
             var app = builder.Build();
+=======
+
+            builder.Services.AddScoped<IIdempotencyRepository, IdempotencyRepository>();
+            builder.Services.AddScoped<IdempotencyService>();
+
+            var app = builder.Build();
+            app.UseMiddleware<IdempotencyMiddleware>();
+>>>>>>> Stashed changes
 
             app.Run(async (context) =>
             {
@@ -36,6 +53,7 @@ namespace APIGateway
                 await context.Response.WriteAsync(await content.Content.ReadAsStringAsync());
             });
 
+<<<<<<< Updated upstream
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -43,12 +61,19 @@ namespace APIGateway
                 app.UseSwaggerUI();
             }
 
+=======
+            app.UseSwagger();
+            app.UseSwaggerUI();
+    
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+>>>>>>> Stashed changes
             app.UseAuthorization();
 
 
             app.MapControllers();
 
-            app.Run();
+            app.Run("http://0.0.0.0:80");
         }
     }
 }
