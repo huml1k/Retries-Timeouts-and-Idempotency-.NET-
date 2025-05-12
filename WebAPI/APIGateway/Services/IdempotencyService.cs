@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 using System.Text;
 using APIGateway.IdempotencyDb;
 using APIGateway.IdempotencyDb.Entities;
-using APIGateway.IdempotencyDb.Repositories;
+using APIGateway.IdempotencyDb.Repositories.interfaces;
 using Newtonsoft.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 

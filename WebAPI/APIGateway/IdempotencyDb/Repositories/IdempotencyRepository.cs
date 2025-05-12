@@ -1,4 +1,5 @@
 ﻿using APIGateway.IdempotencyDb.Entities;
+using APIGateway.IdempotencyDb.Repositories.interfaces;
 using APIGateway.Services;
 using Microsoft.EntityFrameworkCore;
 

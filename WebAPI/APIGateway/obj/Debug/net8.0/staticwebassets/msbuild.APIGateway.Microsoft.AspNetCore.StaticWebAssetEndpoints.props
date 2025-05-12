@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/APIGateway/js/scripts.cnn61pc1vq.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scripts.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cnn61pc1vq"},{"Name":"integrity","Value":"sha256-OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc="},{"Name":"label","Value":"_content/APIGateway/js/scripts.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4432"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 13:53:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/APIGateway/js/scripts.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scripts.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4432"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 13:53:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/APIGateway/styles/styles.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\styles\styles.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho\u002BRctNUtE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2597"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228yq3ppHILFexE3Chh5rlrUwapAKrN3oanho\u002BRctNUtE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 13:54:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/APIGateway/styles/styles.dcl01e99yo.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\styles\styles.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dcl01e99yo"},{"Name":"integrity","Value":"sha256-8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho\u002BRctNUtE="},{"Name":"label","Value":"_content/APIGateway/styles/styles.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2597"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228yq3ppHILFexE3Chh5rlrUwapAKrN3oanho\u002BRctNUtE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 06 May 2025 13:54:05 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

@@ -1,16 +1,16 @@
 {
   "routes": [
     {
-      "endpoint": "/",
+      "endpoint": "/getBank",
       "destination": {
-        "uri": "http://localhost:8080/",
+        "uri": "http://bankapi/BankOperation/Testing",
         "requiresAuthentication": "false"
       }
     },
     {
-      "endpoint": "/getBank",
+      "endpoint": "/postBank",
       "destination": {
-        "uri": "http://bankapi/BankOperation/Testing",
+        "uri": "http://bankapi/BankOperation/TestingPost",
         "requiresAuthentication": "false"
       }
     }

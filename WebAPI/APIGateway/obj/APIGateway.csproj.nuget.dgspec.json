@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj": {}
+    "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj": {}
   },
   "projects": {
-    "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj": {
+    "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj",
         "projectName": "APIGateway",
-        "projectPath": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj",
-        "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\emirh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,12 +45,16 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.4, )"
@@ -56,6 +64,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.4, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.9.0, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -69,9 +81,17 @@
               "target": "Package",
               "version": "[9.0.4, )"
             },
+            "Portable.BouncyCastle": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.9.0, )"
             }
           },
           "imports": [
@@ -85,24 +105,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.12, 8.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.12, 8.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.12, 8.0.12]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.12, 8.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -111,7 +113,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

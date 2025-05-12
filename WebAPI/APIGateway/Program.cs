@@ -1,6 +1,9 @@
 
 using APIGateway.IdempotencyDb;
 using APIGateway.IdempotencyDb.Repositories;
+using APIGateway.IdempotencyDb.Repositories.interfaces;
+using APIGateway.IdempotencyDb.Repositories.Interfaces;
+using APIGateway.Infrastructure;
 using APIGateway.Middlewares;
 using APIGateway.Routes;
 using APIGateway.Services;
@@ -15,13 +18,12 @@ namespace APIGateway
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddDbContext<IdempotencyDbContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(IdempotencyDbContext))));
-            
+
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddControllersWithViews();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddHttpClient();
@@ -34,11 +36,21 @@ namespace APIGateway
                 var httpClientFactory = provider.GetRequiredService<IHttpClientFactory>();
                 return new Router(routeManager, httpClientFactory);
             });
+
             builder.Services.AddScoped<IIdempotencyRepository, IdempotencyRepository>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<JwtOption>();
+            builder.Services.AddScoped<JwtProvider>();
+            builder.Services.AddScoped<PasswordHasher>();
             builder.Services.AddScoped<IdempotencyService>();
+            builder.Services.AddScoped<EmailService>();
 
             var app = builder.Build();
+
+            app.UseMiddleware<QueryStringValidationMiddleware>();
             app.UseMiddleware<IdempotencyMiddleware>();
+            app.MapControllers();
+
             app.Run(async (context) =>
             {
                 var router = context.RequestServices.GetRequiredService<Router>();
@@ -46,7 +58,6 @@ namespace APIGateway
                 await context.Response.WriteAsync(await content.Content.ReadAsStringAsync());
             });
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -54,11 +65,11 @@ namespace APIGateway
             }
 
             app.UseHttpsRedirection();
-
+            app.UseStaticFiles();
             app.UseAuthorization();
 
 
-            app.MapControllers();
+            
 
             app.Run();
         }

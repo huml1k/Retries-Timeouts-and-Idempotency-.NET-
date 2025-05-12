@@ -1,0 +1,146 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    transition: 0.3s;
+}
+
+.form-toggle {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    transition: 0.3s;
+}
+
+    .toggle-btn.active {
+        color: #4ecdc4;
+        font-weight: 600;
+    }
+
+.form-container {
+    position: relative;
+}
+
+.form {
+    display: none;
+}
+
+    .form.active {
+        display: block;
+    }
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+    input:focus {
+        outline: none;
+        border-color: #4ecdc4;
+        background: #f8f9fa;
+    }
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #4ecdc4, #45b7af);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .submit-btn:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+    }
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .links a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+        .links a:hover {
+            color: #4ecdc4;
+        }
+
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #666;
+        transition: 0.3s;
+    }
+
+        .social-icons a:hover {
+            background: #4ecdc4;
+            color: white;
+        }
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+}

@@ -1,4 +1,5 @@
-﻿using APIGateway.IdempotencyDb.Entities;
+﻿using APIGateway.IdempotencyDb.Configuration;
+using APIGateway.IdempotencyDb.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace APIGateway.IdempotencyDb
@@ -9,10 +10,17 @@ namespace APIGateway.IdempotencyDb
 
         public DbSet<IdempotencyKeyEntity> idempotencyKeyEntities { get; set; }
 
+        public DbSet<UserEntity> userEntities { get; set; }
+
         public IdempotencyDbContext(DbContextOptions<IdempotencyDbContext> optionsBuilder) : base(optionsBuilder) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            modelBuilder.ApplyConfiguration(new HttpDataEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new IdempotencyKeyConfiguration());
+            modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
+
             base.OnModelCreating(modelBuilder);
         }
     }

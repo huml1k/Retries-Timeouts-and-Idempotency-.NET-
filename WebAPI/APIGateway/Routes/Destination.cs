@@ -9,6 +9,7 @@ namespace APIGateway.Routes
 
         public bool RequiresAuthentication { get; set; }
 
+
         private readonly IHttpClientFactory _httpClientFactory;
 
         public Destination(
@@ -21,7 +22,7 @@ namespace APIGateway.Routes
             _httpClientFactory = httpClientFactory;
         }
 
-        private string CreateDestinationUri(HttpRequest request) 
+        private string CreateDestinationUri(HttpRequest request)
         {
             string requestPath = request.Path.ToString();
             string queryString = request.QueryString.ToString();
@@ -29,7 +30,7 @@ namespace APIGateway.Routes
             string endpoint = "";
             var endpointSplit = requestPath.Substring(1).Split('/');
 
-            if (endpointSplit.Length > 1) 
+            if (endpointSplit.Length > 1)
             {
                 endpoint = endpointSplit[1];
             }
@@ -47,19 +48,22 @@ namespace APIGateway.Routes
                 Encoding.UTF8,
                 detectEncodingFromByteOrderMarks: false,
                 bufferSize: 4096,
-                leaveOpen: true)) 
+                leaveOpen: true))
             {
                 requestContent = await reader.ReadToEndAsync();
-                request.Body.Position = 0; 
+                request.Body.Position = 0;
             }
 
             using var client = _httpClientFactory.CreateClient();
+
+            var mediaType = request.ContentType?.Split(';')[0].Trim();
+            mediaType ??= "text/plain";
 
             var newRequest = new HttpRequestMessage(
                 new HttpMethod(request.Method),
                 CreateDestinationUri(request))
             {
-                Content = new StringContent(requestContent, Encoding.UTF8, request.ContentType)
+                Content = new StringContent(requestContent, Encoding.UTF8, mediaType)
             };
 
             foreach (var header in request.Headers)

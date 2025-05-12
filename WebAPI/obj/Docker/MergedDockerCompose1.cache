@@ -1,8 +1,8 @@
-name: dockercompose12032743513600161995
+name: dockercompose15456620557624572708
 services:
   apigateway:
     build:
-      context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+      context: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
       dockerfile: Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -33,6 +33,10 @@ services:
     networks:
       app-network: null
     ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
       - mode: ingress
         target: 8080
         protocol: tcp
@@ -66,12 +70,12 @@ services:
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
         target: /app
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
         target: /src
         bind:
           create_host_path: true
@@ -106,7 +110,7 @@ services:
           create_host_path: true
   bankapi:
     build:
-      context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+      context: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
       dockerfile: Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -133,15 +137,20 @@ services:
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
     networks:
       app-network: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8077"
+        protocol: tcp
     tty: true
     volumes:
       - type: bind
-        source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
         target: /app
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
         target: /src
         bind:
           create_host_path: true
@@ -214,22 +223,13 @@ services:
         target: 80
         published: "80"
         protocol: tcp
-      - mode: ingress
-        target: 443
-        published: "443"
-        protocol: tcp
     volumes:
       - type: bind
-        source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
         target: /etc/nginx/conf.d
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\ssl
-        target: /etc/nginx/ssl
         bind:
           create_host_path: true
 networks:
   app-network:
-    name: dockercompose12032743513600161995_app-network
+    name: dockercompose15456620557624572708_app-network
     driver: bridge

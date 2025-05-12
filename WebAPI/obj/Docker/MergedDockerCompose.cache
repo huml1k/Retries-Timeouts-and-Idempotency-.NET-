@@ -1,8 +1,8 @@
-name: dockercompose12032743513600161995
+name: dockercompose15456620557624572708
 services:
   apigateway:
     build:
-      context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+      context: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
       dockerfile: Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -12,6 +12,10 @@ services:
     networks:
       app-network: null
     ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
       - mode: ingress
         target: 8080
         protocol: tcp
@@ -45,11 +49,16 @@ services:
           create_host_path: true
   bankapi:
     build:
-      context: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+      context: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
       dockerfile: Dockerfile
     image: bankapi
     networks:
       app-network: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8077"
+        protocol: tcp
   nginx:
     depends_on:
       apigateway:
@@ -66,22 +75,13 @@ services:
         target: 80
         published: "80"
         protocol: tcp
-      - mode: ingress
-        target: 443
-        published: "443"
-        protocol: tcp
     volumes:
       - type: bind
-        source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
         target: /etc/nginx/conf.d
-        bind:
-          create_host_path: true
-      - type: bind
-        source: C:\Users\User\Desktop\projects\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\ssl
-        target: /etc/nginx/ssl
         bind:
           create_host_path: true
 networks:
   app-network:
-    name: dockercompose12032743513600161995_app-network
+    name: dockercompose15456620557624572708_app-network
     driver: bridge

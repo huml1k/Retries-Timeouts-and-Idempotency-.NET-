@@ -1,9 +1,5 @@
-﻿using APIGateway.Parser;
-using APIGateway.Routes.Model;
-using Microsoft.Extensions.Primitives;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.Net;
-using System.Net.Http;
 
 namespace APIGateway.Routes
 {
@@ -22,13 +18,12 @@ namespace APIGateway.Routes
             LoadRoutes("./routes.json");
         }
 
-        // Router.cs
         private void LoadRoutes(string routeConfigFilePath)
         {
             try
             {
                 if (!File.Exists(routeConfigFilePath))
-                    throw new FileNotFoundException($"Файл конфигурации {routeConfigFilePath} не найден.");
+                    throw new FileNotFoundException($"File config {routeConfigFilePath} not found.");
 
                 var json = File.ReadAllText(routeConfigFilePath);
                 dynamic routerConfig = JsonConvert.DeserializeObject(json);
@@ -56,13 +51,19 @@ namespace APIGateway.Routes
             string basePath = '/' + path.Split('/')[1];
 
             Destination destination;
+
+            if (path.StartsWith("/api"))
+            {
+                return ConstructErrorMessage("Use direct controller for gateway routes");
+            }
+
             try
             {
                 destination = Routes.First(r => r.Endpoint.Equals(basePath)).Destination;
             }
             catch
             {
-                return ConstructErrorMessage("Такого пути не существует");
+                return ConstructErrorMessage("There is no such way");
             }
 
             if (destination.RequiresAuthentication)

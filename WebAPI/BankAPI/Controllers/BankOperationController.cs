@@ -9,7 +9,7 @@ namespace BankAPI.Controllers
         [HttpGet("Testing")]
         public IActionResult GetResult()
         {
-            return Ok("Привет пидор");
+            return Ok("Privet Emirka");
         }
 
         [HttpGet("health")]
