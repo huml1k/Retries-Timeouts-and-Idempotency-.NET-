@@ -47,7 +47,17 @@ namespace APIGateway
 
             var app = builder.Build();
 
-            app.UseMiddleware<QueryStringValidationMiddleware>();
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseAuthorization();
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+
+            //app.UseMiddleware<QueryStringValidationMiddleware>();
             app.UseMiddleware<IdempotencyMiddleware>();
             app.MapControllers();
 
@@ -63,13 +73,6 @@ namespace APIGateway
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseAuthorization();
-
-
-            
 
             app.Run();
         }

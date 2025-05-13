@@ -24,18 +24,11 @@ namespace APIGateway.Routes
 
         private string CreateDestinationUri(HttpRequest request)
         {
-            string requestPath = request.Path.ToString();
-            string queryString = request.QueryString.ToString();
+            var requestPath = request.Path.ToString();
+            var basePath = '/' + requestPath.Split('/')[1];
+            var endpoint = requestPath.Substring(basePath.Length).TrimStart('/');
 
-            string endpoint = "";
-            var endpointSplit = requestPath.Substring(1).Split('/');
-
-            if (endpointSplit.Length > 1)
-            {
-                endpoint = endpointSplit[1];
-            }
-
-            return Uri + endpoint + queryString;
+            return $"{Uri.TrimEnd('/')}/{endpoint}{request.QueryString}";
         }
 
         public async Task<HttpResponseMessage> SendRequest(HttpRequest request)

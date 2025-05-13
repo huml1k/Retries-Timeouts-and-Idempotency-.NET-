@@ -52,11 +52,6 @@ namespace APIGateway.Routes
 
             Destination destination;
 
-            if (path.StartsWith("/api"))
-            {
-                return ConstructErrorMessage("Use direct controller for gateway routes");
-            }
-
             try
             {
                 destination = Routes.First(r => r.Endpoint.Equals(basePath)).Destination;

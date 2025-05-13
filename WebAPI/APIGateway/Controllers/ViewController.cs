@@ -6,7 +6,7 @@ namespace APIGateway.Controllers
     [Route("api/[controller]")]
     public class ViewController : Controller
     {
-        [HttpGet("/page")]
+        [HttpGet("page")]
         public async Task<IActionResult> GetAuthPage() => View("authPage");
     }
 }
