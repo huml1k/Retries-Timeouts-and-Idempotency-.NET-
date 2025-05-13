@@ -1,4 +1,7 @@
 
+using BankAPI.BankDb;
+using Microsoft.EntityFrameworkCore;
+
 namespace BankAPI
 {
     public class Program
@@ -6,8 +9,9 @@ namespace BankAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
+            
+            builder.Services.AddDbContext<BankDbContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
