@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BankAPI.BankDb.Entities;
 
-public class Account
+public class AccountEntity
 {
     [Key]
     [StringLength(20)]
@@ -30,7 +30,7 @@ public class Account
 
     // Навигационные свойства
     [ForeignKey("CustomerId")]
-    public Customer Customer { get; set; }
+    public CustomerEntity CustomerEntity { get; set; }
 
-    public ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
+    public ICollection<TransactionEntity> Transactions { get; set; } = new List<TransactionEntity>();
 }

@@ -10,45 +10,45 @@ public class BankDbContext : DbContext
     {
     }
 
-    public DbSet<Customer> Customers { get; set; }
-    public DbSet<Account> Accounts { get; set; }
-    public DbSet<Transaction> Transactions { get; set; }
+    public DbSet<CustomerEntity> Customers { get; set; }
+    public DbSet<AccountEntity> Accounts { get; set; }
+    public DbSet<TransactionEntity> Transactions { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Конфигурация для Customer
-        modelBuilder.Entity<Customer>()
+        modelBuilder.Entity<CustomerEntity>()
             .HasIndex(c => c.Email)
             .IsUnique();
 
-        modelBuilder.Entity<Customer>()
+        modelBuilder.Entity<CustomerEntity>()
             .HasIndex(c => c.PhoneNumber)
             .IsUnique();
 
-        modelBuilder.Entity<Customer>()
+        modelBuilder.Entity<CustomerEntity>()
             .HasIndex(c => c.PassportNumber)
             .IsUnique();
 
         // Конфигурация для Account
-        modelBuilder.Entity<Account>()
+        modelBuilder.Entity<AccountEntity>()
             .Property(a => a.AccountNumber)
             .HasMaxLength(20);
 
-        modelBuilder.Entity<Account>()
-            .HasOne(a => a.Customer)
+        modelBuilder.Entity<AccountEntity>()
+            .HasOne(a => a.CustomerEntity)
             .WithMany(c => c.Accounts)
             .HasForeignKey(a => a.CustomerId)
             .OnDelete(DeleteBehavior.Restrict);
 
         // Конфигурация для Transaction
-        modelBuilder.Entity<Transaction>()
-            .HasOne(t => t.FromAccount)
+        modelBuilder.Entity<TransactionEntity>()
+            .HasOne(t => t.FromAccountEntity)
             .WithMany(a => a.Transactions)
             .HasForeignKey(t => t.FromAccountNumber)
             .OnDelete(DeleteBehavior.Restrict);
 
-        modelBuilder.Entity<Transaction>()
-            .HasOne(t => t.ToAccount)
+        modelBuilder.Entity<TransactionEntity>()
+            .HasOne(t => t.ToAccountEntity)
             .WithMany()
             .HasForeignKey(t => t.ToAccountNumber)
             .OnDelete(DeleteBehavior.Restrict);

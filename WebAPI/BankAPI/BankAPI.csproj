@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="BankDb\Configuration\" />
-    <Folder Include="BankDb\Repositories\" />
   </ItemGroup>
 
 </Project>

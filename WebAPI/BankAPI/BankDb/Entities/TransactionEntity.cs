@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BankAPI.BankDb.Entities;
 
-public class Transaction
+public class TransactionEntity
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -36,8 +36,8 @@ public class Transaction
 
     // Навигационные свойства
     [ForeignKey("FromAccountNumber")]
-    public Account FromAccount { get; set; }
+    public AccountEntity FromAccountEntity { get; set; }
 
     [ForeignKey("ToAccountNumber")]
-    public Account ToAccount { get; set; }
+    public AccountEntity ToAccountEntity { get; set; }
 }
