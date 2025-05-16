@@ -18,7 +18,7 @@ namespace APIGateway.IdempotencyDb.Repositories
             var result = new UserEntity
             {
                 Email = userEntity.Email,
-                Login = userEntity.Login,
+                Name = userEntity.Name,
                 Password = userEntity.Password
             };
 

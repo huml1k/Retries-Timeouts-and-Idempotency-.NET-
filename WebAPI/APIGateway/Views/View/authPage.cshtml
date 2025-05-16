@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вход/Регистрация</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="~/styles/styles.css" />
 </head>
 <body>
     <div class="container">
@@ -16,29 +16,31 @@
         <div class="form-container">
             <form class="form active" id="login-form">
                 <div class="input-group">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" id="login-email" placeholder="Email" required> <!-- Добавлен id -->
                 </div>
                 <div class="input-group">
-                    <input type="password" placeholder="Пароль" required>
+                    <input type="password" id="login-password" placeholder="Пароль" required> <!-- Добавлен id -->
                 </div>
                 <button type="submit" class="submit-btn">Войти</button>
+                <div id="login-message"></div> <!-- Добавлен блок сообщений -->
             </form>
 
             <form class="form" id="register-form">
                 <div class="input-group">
-                    <input type="text" placeholder="Имя" required>
+                    <input type="text" id="register-name" placeholder="Имя" required> <!-- Добавлен id -->
                 </div>
                 <div class="input-group">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" id="register-email" placeholder="Email" required> <!-- Добавлен id -->
                 </div>
                 <div class="input-group">
-                    <input type="password" placeholder="Пароль" required>
+                    <input type="password" id="register-password" placeholder="Пароль" required> <!-- Добавлен id -->
                 </div>
                 <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                <div id="register-message"></div> <!-- Добавлен блок сообщений -->
             </form>
         </div>
     </div>
 
-    <script src="./js/scripts.js"></script>
+    <script src="~/js/scripts.js"></script>
 </body>
 </html>

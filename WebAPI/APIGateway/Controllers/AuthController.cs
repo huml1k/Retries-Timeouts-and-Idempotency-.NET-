@@ -1,4 +1,5 @@
-﻿using APIGateway.IdempotencyDb.Entities;
+﻿using APIGateway.Contracts;
+using APIGateway.IdempotencyDb.Entities;
 using APIGateway.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Runtime.CompilerServices;
@@ -25,10 +26,10 @@ namespace APIGateway.Controllers
             return Ok("Регистрация прошла успешно!");
         }
 
-        [HttpGet("login")]
-        public async Task<IActionResult> Login([FromBody] UserEntity userEntity)
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] UserContract userEntity)
         {
-            var token = await _emailService.Login(userEntity);
+            var token = await _emailService.Login(userEntity.Email, userEntity.Password);
             Response.Cookies.Append("token-user", token);
 
             return Redirect("http://bankapi/BankOperation/TestingPost");

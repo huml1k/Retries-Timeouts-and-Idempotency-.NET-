@@ -31,11 +31,11 @@ namespace APIGateway.Services
             await _userRepository.Create(user);
         }
 
-        public async Task<string> Login(UserEntity userEntity)
+        public async Task<string> Login(string email, string password)
         {
-            var user = await _userRepository.GetByEmail(userEntity.Email);
+            var user = await _userRepository.GetByEmail(email);
 
-            var result = _passwordHasher.Verify(userEntity.Password, user.Password);
+            var result = _passwordHasher.Verify(password, user.Password);
 
             if (!result) throw new Exception("Неверный пароль");
 

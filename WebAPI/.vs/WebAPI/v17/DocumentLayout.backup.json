@@ -3,20 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\routes\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\routes\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\routes\\destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\routes\\destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\middlewares\\idempotencymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\middlewares\\idempotencymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\entities\\httpdataentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\entities\\httpdataentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\controllers\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\controllers\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\infrastructure\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\infrastructure\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\contracts\\usercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\contracts\\usercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\idempotencydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\idempotencydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\views\\view\\authpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\views\\view\\authpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,28 +59,40 @@
       "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\routes\\routemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\routes\\routemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\routes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\routes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\controllers\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\controllers\\viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\middlewares\\idempotencymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\middlewares\\idempotencymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\wwwroot\\styles\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\wwwroot\\styles\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\routes\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\routes\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\routes\\destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\routes\\destination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\routes\\routemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\routes\\routemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A64887DC-C1AA-4FE9-961D-BC860867EC9B}|BankAPI\\BankAPI.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\bankapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A64887DC-C1AA-4FE9-961D-BC860867EC9B}|BankAPI\\BankAPI.csproj|solutionrelative:bankapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\services\\idempotencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,28 +107,8 @@
       "RelativeMoniker": "D:0:0:{A64887DC-C1AA-4FE9-961D-BC860867EC9B}|BankAPI\\BankAPI.csproj|solutionrelative:bankapi\\controllers\\bankoperationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\idempotencydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\idempotencydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\repositories\\idempotencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\repositories\\idempotencyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\views\\view\\authpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\views\\view\\authpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A64887DC-C1AA-4FE9-961D-BC860867EC9B}|BankAPI\\BankAPI.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\bankapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -96,10 +116,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\infrastructure\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\infrastructure\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\infrastructure\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,20 +130,8 @@
       "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\configuration\\userentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\entities\\httpdataentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\entities\\httpdataentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\idempotencydb\\entities\\idempotencykeyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\idempotencydb\\entities\\idempotencykeyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\wwwroot\\styles\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\wwwroot\\styles\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\wwwroot\\js\\scripts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{926D47E3-4EF0-4639-BDD8-36A8E55F9532}|APIGateway\\APIGateway.csproj|c:\\users\\user\\desktop\\\u0444\u044B\u0432\\retries-timeouts-and-idempotency-.net-\\webapi\\apigateway\\apigateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -203,24 +207,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ViewController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Controllers\\ViewController.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Controllers\\ViewController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Controllers\\ViewController.cs",
-              "RelativeToolTip": "APIGateway\\Controllers\\ViewController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "UserContract.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Contracts\\UserContract.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Contracts\\UserContract.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Contracts\\UserContract.cs",
+              "RelativeToolTip": "APIGateway\\Contracts\\UserContract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T13:54:43.884Z",
+              "WhenOpened": "2025-05-16T17:28:44.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "APIGateway\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:54:35.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Services\\EmailService.cs",
+              "RelativeToolTip": "APIGateway\\Services\\EmailService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAApwCMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:04:19.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Infrastructure\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\PasswordHasher.cs",
+              "RelativeToolTip": "APIGateway\\Infrastructure\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:02:19.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Repositories\\interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Repositories\\interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:56:19.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:58:15.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HttpDataEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Entities\\HttpDataEntity.cs",
+              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Entities\\HttpDataEntity.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Entities\\HttpDataEntity.cs",
+              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Entities\\HttpDataEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:48:31.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Entities\\UserEntity.cs",
+              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Entities\\UserEntity.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Entities\\UserEntity.cs",
+              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Entities\\UserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:57:06.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "scripts.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\scripts.js",
+              "RelativeDocumentMoniker": "APIGateway\\wwwroot\\js\\scripts.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\scripts.js",
+              "RelativeToolTip": "APIGateway\\wwwroot\\js\\scripts.js",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwCAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-06T13:53:26.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "routes.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\routes.json",
               "RelativeDocumentMoniker": "APIGateway\\routes.json",
@@ -228,89 +336,50 @@
               "RelativeToolTip": "APIGateway\\routes.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-28T16:48:29.96Z",
+              "WhenOpened": "2025-04-28T16:48:29.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "authPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Views\\View\\authPage.cshtml",
+              "RelativeDocumentMoniker": "APIGateway\\Views\\View\\authPage.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Views\\View\\authPage.cshtml",
+              "RelativeToolTip": "APIGateway\\Views\\View\\authPage.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T14:35:21.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Program.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Program.cs",
-              "RelativeToolTip": "APIGateway\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAApwDYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:32:57.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Program.cs",
               "RelativeDocumentMoniker": "BankAPI\\Program.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Program.cs",
               "RelativeToolTip": "BankAPI\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCoAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T15:18:01.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IdempotencyMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Middlewares\\IdempotencyMiddleware.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Middlewares\\IdempotencyMiddleware.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Middlewares\\IdempotencyMiddleware.cs",
-              "RelativeToolTip": "APIGateway\\Middlewares\\IdempotencyMiddleware.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAApwBoAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Program.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Program.cs",
+              "RelativeToolTip": "APIGateway\\Program.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwCAAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:48:47.576Z",
+              "WhenOpened": "2025-04-14T15:32:57.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "docker-compose.dcproj",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\docker-compose.dcproj",
-              "RelativeDocumentMoniker": "docker-compose.dcproj",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\docker-compose.dcproj",
-              "RelativeToolTip": "docker-compose.dcproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-15T13:29:07.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Destination.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Destination.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Routes\\Destination.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Destination.cs",
-              "RelativeToolTip": "APIGateway\\Routes\\Destination.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:12:37.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Router.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Router.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Routes\\Router.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Router.cs",
-              "RelativeToolTip": "APIGateway\\Routes\\Router.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowFMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T20:18:13.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -323,104 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RouteManager.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\RouteManager.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Routes\\RouteManager.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\RouteManager.cs",
-              "RelativeToolTip": "APIGateway\\Routes\\RouteManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:27:37.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "APIGateway\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T13:54:35.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "BankAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\appsettings.json",
-              "RelativeToolTip": "BankAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-14T18:20:12.182Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IdempotencyService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Services\\IdempotencyService.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Services\\IdempotencyService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Services\\IdempotencyService.cs",
-              "RelativeToolTip": "APIGateway\\Services\\IdempotencyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:38:19.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Services\\EmailService.cs",
-              "RelativeToolTip": "APIGateway\\Services\\EmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:04:19.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\appsettings.json",
-              "RelativeDocumentMoniker": "APIGateway\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\appsettings.json",
-              "RelativeToolTip": "APIGateway\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-14T15:23:11.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BankOperationController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Controllers\\BankOperationController.cs",
-              "RelativeDocumentMoniker": "BankAPI\\Controllers\\BankOperationController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Controllers\\BankOperationController.cs",
-              "RelativeToolTip": "BankAPI\\Controllers\\BankOperationController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T16:51:37.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UserEntity.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Entities\\UserEntity.cs",
-              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Entities\\UserEntity.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Entities\\UserEntity.cs",
-              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Entities\\UserEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T13:57:06.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 8,
               "Title": "IdempotencyDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\IdempotencyDbContext.cs",
               "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\IdempotencyDbContext.cs",
@@ -428,131 +400,24 @@
               "RelativeToolTip": "APIGateway\\IdempotencyDb\\IdempotencyDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T13:55:18.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T13:58:15.369Z"
+              "WhenOpened": "2025-05-06T13:55:18.66Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Repositories\\interfaces\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Repositories\\interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "Title": "IdempotencyMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Middlewares\\IdempotencyMiddleware.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Middlewares\\IdempotencyMiddleware.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Middlewares\\IdempotencyMiddleware.cs",
+              "RelativeToolTip": "APIGateway\\Middlewares\\IdempotencyMiddleware.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA7wBoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T13:56:19.831Z"
+              "WhenOpened": "2025-05-06T14:48:47.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IdempotencyRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\IdempotencyRepository.cs",
-              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Repositories\\IdempotencyRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\IdempotencyRepository.cs",
-              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Repositories\\IdempotencyRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:39:48.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Dockerfile",
-              "RelativeDocumentMoniker": "BankAPI\\Dockerfile",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Dockerfile",
-              "RelativeToolTip": "BankAPI\\Dockerfile",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwB4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-15T14:49:20.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "authPage.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Views\\View\\authPage.cshtml",
-              "RelativeDocumentMoniker": "APIGateway\\Views\\View\\authPage.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Views\\View\\authPage.cshtml",
-              "RelativeToolTip": "APIGateway\\Views\\View\\authPage.cshtml",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwCsAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T14:35:21.352Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
-              "ViewState": "AgIAAKQBAAAAAAAAAAAkwLcBAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-04-15T14:31:31.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Infrastructure\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\PasswordHasher.cs",
-              "RelativeToolTip": "APIGateway\\Infrastructure\\PasswordHasher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:02:19.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "JwtProvider.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\JwtProvider.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Infrastructure\\JwtProvider.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\JwtProvider.cs",
-              "RelativeToolTip": "APIGateway\\Infrastructure\\JwtProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:01:37.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "JwtOption.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\JwtOption.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Infrastructure\\JwtOption.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\JwtOption.cs",
-              "RelativeToolTip": "APIGateway\\Infrastructure\\JwtOption.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:01:15.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UserEntityConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Configuration\\UserEntityConfiguration.cs",
-              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Configuration\\UserEntityConfiguration.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Configuration\\UserEntityConfiguration.cs",
-              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Configuration\\UserEntityConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T13:57:30.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 17,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css",
               "RelativeDocumentMoniker": "APIGateway\\wwwroot\\styles\\styles.css",
@@ -564,7 +429,187 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ViewController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Controllers\\ViewController.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Controllers\\ViewController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Controllers\\ViewController.cs",
+              "RelativeToolTip": "APIGateway\\Controllers\\ViewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:54:43.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Router.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Router.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Routes\\Router.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Router.cs",
+              "RelativeToolTip": "APIGateway\\Routes\\Router.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T20:18:13.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Destination.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Destination.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Routes\\Destination.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Destination.cs",
+              "RelativeToolTip": "APIGateway\\Routes\\Destination.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:12:37.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "docker-compose.dcproj",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\docker-compose.dcproj",
+              "RelativeDocumentMoniker": "docker-compose.dcproj",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\docker-compose.dcproj",
+              "RelativeToolTip": "docker-compose.dcproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-15T13:29:07.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RouteManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\RouteManager.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Routes\\RouteManager.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\RouteManager.cs",
+              "RelativeToolTip": "APIGateway\\Routes\\RouteManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:27:37.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "BankAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\appsettings.json",
+              "RelativeToolTip": "BankAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-14T18:20:12.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IdempotencyService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Services\\IdempotencyService.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Services\\IdempotencyService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Services\\IdempotencyService.cs",
+              "RelativeToolTip": "APIGateway\\Services\\IdempotencyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:38:19.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "APIGateway\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\appsettings.json",
+              "RelativeToolTip": "APIGateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-14T15:23:11.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BankOperationController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Controllers\\BankOperationController.cs",
+              "RelativeDocumentMoniker": "BankAPI\\Controllers\\BankOperationController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Controllers\\BankOperationController.cs",
+              "RelativeToolTip": "BankAPI\\Controllers\\BankOperationController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T16:51:37.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IdempotencyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\IdempotencyRepository.cs",
+              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Repositories\\IdempotencyRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Repositories\\IdempotencyRepository.cs",
+              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Repositories\\IdempotencyRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:39:48.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "BankAPI\\Dockerfile",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Dockerfile",
+              "RelativeToolTip": "BankAPI\\Dockerfile",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwB4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-15T14:49:20.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Microsoft.VisualStudio.Docker.Compose.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Sdks\\Microsoft.Docker.Sdk\\build\\Microsoft.VisualStudio.Docker.Compose.targets",
+              "ViewState": "AgIAAKQBAAAAAAAAAAAkwLcBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-04-15T14:31:31.977Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 29,
+              "Title": "JwtProvider.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\JwtProvider.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Infrastructure\\JwtProvider.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\JwtProvider.cs",
+              "RelativeToolTip": "APIGateway\\Infrastructure\\JwtProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:01:37.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "JwtOption.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\JwtOption.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Infrastructure\\JwtOption.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Infrastructure\\JwtOption.cs",
+              "RelativeToolTip": "APIGateway\\Infrastructure\\JwtOption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T14:01:15.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Configuration\\UserEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Configuration\\UserEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Configuration\\UserEntityConfiguration.cs",
+              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Configuration\\UserEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T13:57:30.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "IdempotencyKeyEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Entities\\IdempotencyKeyEntity.cs",
               "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Entities\\IdempotencyKeyEntity.cs",
@@ -576,31 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "HttpDataEntity.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Entities\\HttpDataEntity.cs",
-              "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Entities\\HttpDataEntity.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Entities\\HttpDataEntity.cs",
-              "RelativeToolTip": "APIGateway\\IdempotencyDb\\Entities\\HttpDataEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:48:31.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "scripts.js",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\scripts.js",
-              "RelativeDocumentMoniker": "APIGateway\\wwwroot\\js\\scripts.js",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\scripts.js",
-              "RelativeToolTip": "APIGateway\\wwwroot\\js\\scripts.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-06T13:53:26.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Routes.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Model\\Routes.cs",
               "RelativeDocumentMoniker": "APIGateway\\Routes\\Model\\Routes.cs",
@@ -612,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "BankAPI\\Properties\\launchSettings.json",
@@ -624,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "Destionation.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Destionation.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\projects\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Routes\\Destionation.cs",
@@ -636,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "APIGateway.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj",
               "RelativeDocumentMoniker": "APIGateway\\APIGateway.csproj",
@@ -648,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "BankAPI\\appsettings.Development.json",
@@ -660,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": ".dockerignore",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\.dockerignore",
               "RelativeDocumentMoniker": ".dockerignore",
@@ -672,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Dockerfile",
               "RelativeDocumentMoniker": "APIGateway\\Dockerfile",
@@ -684,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "api.conf",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\api.conf",
               "RelativeDocumentMoniker": "api.conf",
@@ -696,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "docker-compose.override.yml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\docker-compose.override.yml",
               "RelativeDocumentMoniker": "docker-compose.override.yml",
@@ -708,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "JsonParser.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Parser\\JsonParser.cs",
               "RelativeDocumentMoniker": "APIGateway\\Parser\\JsonParser.cs",
@@ -720,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "APIGateway\\Properties\\launchSettings.json",
@@ -732,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "BankAPI.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\BankAPI.csproj",
               "RelativeDocumentMoniker": "BankAPI\\BankAPI.csproj",
@@ -744,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\launchSettings.json",
               "RelativeDocumentMoniker": "launchSettings.json",
@@ -756,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "IdempotencyKeyConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Configuration\\IdempotencyKeyConfiguration.cs",
               "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Configuration\\IdempotencyKeyConfiguration.cs",
@@ -768,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "HttpDataEntityConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\Configuration\\HttpDataEntityConfiguration.cs",
               "RelativeDocumentMoniker": "APIGateway\\IdempotencyDb\\Configuration\\HttpDataEntityConfiguration.cs",
@@ -780,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "MyDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\MyDbContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\projects\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\IdempotencyDb\\MyDbContext.cs",
@@ -792,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "RoutingMIddleware.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u0444\u044B\u0432\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\BankAPI\\Middlewares\\RoutingMIddleware.cs",
               "RelativeDocumentMoniker": "BankAPI\\Middlewares\\RoutingMIddleware.cs",

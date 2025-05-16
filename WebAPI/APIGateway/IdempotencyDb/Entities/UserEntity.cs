@@ -4,7 +4,7 @@
     {
         public Guid Id { get; set; }
 
-        public string Login { get; set; }
+        public string Name { get; set; }
 
         public string Password { get; set; }
 
@@ -15,7 +15,7 @@
             return new UserEntity
             {
                 Id = user.Id,
-                Login = user.Login,
+                Name = user.Name,
                 Password = user.Password,
                 Email = user.Email,
             };

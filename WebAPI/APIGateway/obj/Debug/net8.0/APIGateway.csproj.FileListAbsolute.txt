@@ -431,3 +431,4 @@ C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGa
 C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway\obj\Debug\net8.0\ref\APIGateway.dll
 C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway\obj\Debug\net8.0\APIGateway.RazorAssemblyInfo.cache
 C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway\obj\Debug\net8.0\APIGateway.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway\bin\Debug\net8.0\wwwroot\js\scripts.js

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AC9MUeA/2ylFlb28ykFBFh/S2LAyO9KzVyT1gU8OYVs=",
+  "Hash": "Hvng2K4bGE+UUPk1NNEUtWqClzNqcYylWDyTx03mzcE=",
   "Source": "APIGateway",
   "BasePath": "_content/APIGateway",
   "Mode": "Default",
@@ -31,9 +31,9 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cnn61pc1vq",
-      "Integrity": "OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc=",
-      "CopyToOutputDirectory": "Never",
+      "Fingerprint": "a1autadajt",
+      "Integrity": "ToNQIvq7qxIPMn2KsvtV/QE77iHO96hSotDgge23Dps=",
+      "CopyToOutputDirectory": "Always",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
@@ -61,7 +61,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "js/scripts.cnn61pc1vq.js",
+      "Route": "js/scripts.a1autadajt.js",
       "AssetFile": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\scripts.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -71,7 +71,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4432"
+          "Value": "4438"
         },
         {
           "Name": "Content-Type",
@@ -79,11 +79,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc=\""
+          "Value": "\"ToNQIvq7qxIPMn2KsvtV/QE77iHO96hSotDgge23Dps=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 13:53:32 GMT"
+          "Value": "Fri, 16 May 2025 17:21:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -93,7 +93,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cnn61pc1vq"
+          "Value": "a1autadajt"
         },
         {
           "Name": "label",
@@ -101,7 +101,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc="
+          "Value": "sha256-ToNQIvq7qxIPMn2KsvtV/QE77iHO96hSotDgge23Dps="
         }
       ]
     },
@@ -116,7 +116,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4432"
+          "Value": "4438"
         },
         {
           "Name": "Content-Type",
@@ -124,11 +124,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc=\""
+          "Value": "\"ToNQIvq7qxIPMn2KsvtV/QE77iHO96hSotDgge23Dps=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 13:53:32 GMT"
+          "Value": "Fri, 16 May 2025 17:21:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -138,7 +138,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc="
+          "Value": "sha256-ToNQIvq7qxIPMn2KsvtV/QE77iHO96hSotDgge23Dps="
         }
       ]
     },

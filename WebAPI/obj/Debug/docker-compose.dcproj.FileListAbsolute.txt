@@ -79,3 +79,4 @@ C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\bin\D
 C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\bin\Debug\Microsoft.Bcl.Memory.dll
 C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\bin\Debug\wwwroot\js\scripts.js

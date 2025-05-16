@@ -12,9 +12,9 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cnn61pc1vq</Fingerprint>
-      <Integrity>OGKiwRykKac5lyX4EhAPwwyZfwab8vmF1MPraEiT3Dc=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <Fingerprint>a1autadajt</Fingerprint>
+      <Integrity>ToNQIvq7qxIPMn2KsvtV/QE77iHO96hSotDgge23Dps=</Integrity>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scripts.js'))</OriginalItemSpec>
     </StaticWebAsset>

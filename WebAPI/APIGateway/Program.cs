@@ -8,7 +8,6 @@ using APIGateway.Middlewares;
 using APIGateway.Routes;
 using APIGateway.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace APIGateway
 {
@@ -20,7 +19,6 @@ namespace APIGateway
 
             builder.Services.AddDbContext<IdempotencyDbContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(IdempotencyDbContext))));
-
 
             builder.Services.AddControllers();
             builder.Services.AddControllersWithViews();
@@ -37,6 +35,16 @@ namespace APIGateway
                 return new Router(routeManager, httpClientFactory);
             });
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
+            });
+
             builder.Services.AddScoped<IIdempotencyRepository, IdempotencyRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<JwtOption>();
@@ -47,9 +55,11 @@ namespace APIGateway
 
             var app = builder.Build();
 
+            app.UseCors("AllowAll");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseAuthorization();
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
@@ -57,7 +67,6 @@ namespace APIGateway
                 endpoints.MapControllers();
             });
 
-            //app.UseMiddleware<QueryStringValidationMiddleware>();
             app.UseMiddleware<IdempotencyMiddleware>();
             app.MapControllers();
 
