@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Hvng2K4bGE+UUPk1NNEUtWqClzNqcYylWDyTx03mzcE=",
+  "Hash": "pZ4URTev+p6a69//6+mVekcYaHAjbWORD6RkHyULKbE=",
   "Source": "APIGateway",
   "BasePath": "_content/APIGateway",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
+      "SourceId": "APIGateway",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\",
+      "BasePath": "_content/APIGateway",
+      "RelativePath": "js/bankScripts#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "05x4vrjmjn",
+      "Integrity": "PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bankScripts.js"
+    },
     {
       "Identity": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\scripts.js",
       "SourceId": "APIGateway",
@@ -36,6 +57,27 @@
       "CopyToOutputDirectory": "Always",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css",
+      "SourceId": "APIGateway",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\",
+      "BasePath": "_content/APIGateway",
+      "RelativePath": "styles/bankStyles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r7z8c44v2e",
+      "Integrity": "R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles\\bankStyles.css"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css",
@@ -60,6 +102,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "js/bankScripts.05x4vrjmjn.js",
+      "AssetFile": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 17:07:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "05x4vrjmjn"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bankScripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/bankScripts.js",
+      "AssetFile": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2954"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 17:07:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ="
+        }
+      ]
+    },
     {
       "Route": "js/scripts.a1autadajt.js",
       "AssetFile": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\scripts.js",
@@ -139,6 +263,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-ToNQIvq7qxIPMn2KsvtV/QE77iHO96hSotDgge23Dps="
+        }
+      ]
+    },
+    {
+      "Route": "styles/bankStyles.css",
+      "AssetFile": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1723"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 16:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk="
+        }
+      ]
+    },
+    {
+      "Route": "styles/bankStyles.r7z8c44v2e.css",
+      "AssetFile": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1723"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 17 May 2025 16:25:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r7z8c44v2e"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/bankStyles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk="
         }
       ]
     },

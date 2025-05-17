@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Online</title>
+    <link rel="stylesheet" href="~/styles/bankStyles.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">BankOnline</div>
+            <div class="user-info">
+                <div>Иван Петров</div>
+                <div>Счет: №123456789</div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="left-column">
+                <div class="card balance-section">
+                    <h2>Ваш баланс</h2>
+                    <div class="balance-amount">75 430 ₽</div>
+                </div>
+
+                <div class="card">
+                    <h2>Кредитная информация</h2>
+                    <div class="credit-info">
+                        <p>Непогашенный кредит: 45 000 ₽</p>
+                        <p>Дата погашения: 15.12.2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="card">
+                    <h2>Операции</h2>
+                    <div class="operations">
+                        <form class="operation-form" id="creditForm">
+                            <h3>Погашение кредита</h3>
+                            <input type="number" placeholder="Сумма" required>
+                            <button type="submit" class="pay-button">Погасить</button>
+                        </form>
+
+                        <form class="operation-form" id="transferForm">
+                            <h3>Перевод средств</h3>
+                            <input type="number" placeholder="Сумма" required>
+                            <input type="text" placeholder="Номер счета получателя" required>
+                            <button type="submit" class="transfer-button">Перевести</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="~/js/bankScripts.js"></script>
+</body>
+</html>

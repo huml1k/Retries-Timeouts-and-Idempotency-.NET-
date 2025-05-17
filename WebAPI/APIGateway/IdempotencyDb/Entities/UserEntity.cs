@@ -10,6 +10,9 @@
 
         public string Email { get; set; }
 
+        public Guid FinancialProfileId { get; set; }
+        public FinancialProfile FinancialProfile { get; set; }
+
         public static UserEntity Create(UserEntity user)
         {
             return new UserEntity
@@ -18,6 +21,7 @@
                 Name = user.Name,
                 Password = user.Password,
                 Email = user.Email,
+                FinancialProfile = user.FinancialProfile
             };
         }
     }

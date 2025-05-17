@@ -12,11 +12,13 @@ namespace APIGateway.IdempotencyDb
 
         public DbSet<UserEntity> userEntities { get; set; }
 
+        public DbSet<FinancialProfile> financialProfiles { get; set; }
+
         public IdempotencyDbContext(DbContextOptions<IdempotencyDbContext> optionsBuilder) : base(optionsBuilder) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.ApplyConfiguration(new FinancialProfileConfiguration());
             modelBuilder.ApplyConfiguration(new HttpDataEntityConfiguration());
             modelBuilder.ApplyConfiguration(new IdempotencyKeyConfiguration());
             modelBuilder.ApplyConfiguration(new UserEntityConfiguration());

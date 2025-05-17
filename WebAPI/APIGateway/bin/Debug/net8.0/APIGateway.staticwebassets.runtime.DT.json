@@ -6,6 +6,14 @@
     "Children": {
       "js": {
         "Children": {
+          "bankScripts.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "js/bankScripts.js"
+            },
+            "Patterns": null
+          },
           "scripts.js": {
             "Children": null,
             "Asset": {
@@ -20,6 +28,14 @@
       },
       "styles": {
         "Children": {
+          "bankStyles.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "styles/bankStyles.css"
+            },
+            "Patterns": null
+          },
           "styles.css": {
             "Children": null,
             "Asset": {

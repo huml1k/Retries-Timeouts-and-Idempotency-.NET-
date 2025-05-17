@@ -1,0 +1,1 @@
+C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway\wwwroot\js\bankScript.js
