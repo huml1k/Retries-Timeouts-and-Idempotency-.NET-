@@ -22,6 +22,37 @@ namespace APIGateway.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("APIGateway.IdempotencyDb.Entities.FinancialProfile", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("AccountNumber")
+                        .IsRequired()
+                        .HasMaxLength(34)
+                        .HasColumnType("character varying(34)");
+
+                    b.Property<decimal>("Balance")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("CreditDueDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("UnpaidCredit")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("financialProfiles");
+                });
+
             modelBuilder.Entity("APIGateway.IdempotencyDb.Entities.HttpDataEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -33,10 +64,12 @@ namespace APIGateway.Migrations
 
                     b.Property<string>("RequestBody")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("RequestDate")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<string>("RequestHeaders")
                         .IsRequired()
@@ -44,15 +77,17 @@ namespace APIGateway.Migrations
 
                     b.Property<string>("RequestMethod")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(10)
+                        .HasColumnType("character varying(10)");
 
                     b.Property<string>("RequestPath")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
 
                     b.Property<string>("ResponseBody")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ResponseCode")
                         .HasColumnType("integer");
@@ -62,9 +97,6 @@ namespace APIGateway.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("IdempotencyKeyId")
-                        .IsUnique();
 
                     b.ToTable("httpDataEntities");
                 });
@@ -76,36 +108,90 @@ namespace APIGateway.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreateDate")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("GETUTCDATE()");
 
                     b.Property<Guid>("HttpExchanceDataID")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("IdempotencyKey")
-                        .HasColumnType("uuid");
+                    b.Property<string>("IdempotencyKey")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("character varying(256)");
 
                     b.Property<DateTime?>("LockedAt")
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("HttpExchanceDataID")
+                        .IsUnique();
+
+                    b.HasIndex("IdempotencyKey")
+                        .IsUnique()
+                        .HasDatabaseName("IX_IdempotencyKey_Key");
+
                     b.ToTable("idempotencyKeyEntities");
                 });
 
-            modelBuilder.Entity("APIGateway.IdempotencyDb.Entities.HttpDataEntity", b =>
+            modelBuilder.Entity("APIGateway.IdempotencyDb.Entities.UserEntity", b =>
                 {
-                    b.HasOne("APIGateway.IdempotencyDb.Entities.IdempotencyKeyEntity", "IdempotencyKey")
-                        .WithOne("HttpDataEntity")
-                        .HasForeignKey("APIGateway.IdempotencyDb.Entities.HttpDataEntity", "IdempotencyKeyId")
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("FinancialProfileId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("userEntities");
+                });
+
+            modelBuilder.Entity("APIGateway.IdempotencyDb.Entities.FinancialProfile", b =>
+                {
+                    b.HasOne("APIGateway.IdempotencyDb.Entities.UserEntity", "User")
+                        .WithOne("FinancialProfile")
+                        .HasForeignKey("APIGateway.IdempotencyDb.Entities.FinancialProfile", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("IdempotencyKey");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("APIGateway.IdempotencyDb.Entities.IdempotencyKeyEntity", b =>
                 {
-                    b.Navigation("HttpDataEntity")
+                    b.HasOne("APIGateway.IdempotencyDb.Entities.HttpDataEntity", "HttpDataEntity")
+                        .WithOne("IdempotencyKey")
+                        .HasForeignKey("APIGateway.IdempotencyDb.Entities.IdempotencyKeyEntity", "HttpExchanceDataID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("HttpDataEntity");
+                });
+
+            modelBuilder.Entity("APIGateway.IdempotencyDb.Entities.HttpDataEntity", b =>
+                {
+                    b.Navigation("IdempotencyKey")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("APIGateway.IdempotencyDb.Entities.UserEntity", b =>
+                {
+                    b.Navigation("FinancialProfile")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

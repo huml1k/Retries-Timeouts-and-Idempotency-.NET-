@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model APIGateway.Models.BankViewModel
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -11,8 +12,8 @@
         <header class="header">
             <div class="logo">BankOnline</div>
             <div class="user-info">
-                <div>Иван Петров</div>
-                <div>Счет: №123456789</div>
+                <div>@Model.FullName</div>
+                <div>Счет: @Model.AccountNumber</div>
             </div>
         </header>
 
@@ -20,14 +21,14 @@
             <div class="left-column">
                 <div class="card balance-section">
                     <h2>Ваш баланс</h2>
-                    <div class="balance-amount">75 430 ₽</div>
+                    <div class="balance-amount">@Model.Balance ₽</div>
                 </div>
 
                 <div class="card">
                     <h2>Кредитная информация</h2>
                     <div class="credit-info">
-                        <p>Непогашенный кредит: 45 000 ₽</p>
-                        <p>Дата погашения: 15.12.2023</p>
+                        <p>Непогашенный кредит: @Model.UnpaidCredit ₽</p>
+                        <p>Дата погашения: @Model.CreditDueDate</p>
                     </div>
                 </div>
             </div>

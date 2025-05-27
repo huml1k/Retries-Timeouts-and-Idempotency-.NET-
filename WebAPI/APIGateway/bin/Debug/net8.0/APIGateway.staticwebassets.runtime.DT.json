@@ -14,11 +14,11 @@
             },
             "Patterns": null
           },
-          "scripts.js": {
+          "script2.js": {
             "Children": null,
             "Asset": {
               "ContentRootIndex": 0,
-              "SubPath": "js/scripts.js"
+              "SubPath": "js/script2.js"
             },
             "Patterns": null
           }

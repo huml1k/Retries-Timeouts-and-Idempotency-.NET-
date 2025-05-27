@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "endpoint": "/getBank",
+      "destination": {
+        "uri": "http://bankapi/BankOperation/Testing",
+        "requiresAuthentication": "false"
+      }
+    },
+    {
+      "endpoint": "/postBank",
+      "destination": {
+        "uri": "http://bankapi/BankOperation/TestingPost",
+        "requiresAuthentication": "false"
+      }
+    }
+  ]
+}

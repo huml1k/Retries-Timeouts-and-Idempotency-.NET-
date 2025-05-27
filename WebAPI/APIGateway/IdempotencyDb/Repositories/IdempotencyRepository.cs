@@ -1,33 +1,45 @@
 ﻿using APIGateway.IdempotencyDb.Entities;
 using APIGateway.IdempotencyDb.Repositories.interfaces;
-using APIGateway.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace APIGateway.IdempotencyDb.Repositories;
-
-public class IdempotencyRepository : IIdempotencyRepository
+namespace APIGateway.IdempotencyDb.Repositories
 {
-    private readonly IdempotencyDbContext _context;
-
-    public IdempotencyRepository(IdempotencyDbContext context)
+    public class IdempotencyRepository : IIdempotencyRepository
     {
-        _context = context;
-    }
+        private readonly IdempotencyDbContext _context;
 
-    public async Task<bool> ContainsIdempotencyKey(IdempotencyKeyEntity key)
-    {
-        if (key == null) throw new ArgumentNullException(nameof(key));
-        if (string.IsNullOrWhiteSpace(key.IdempotencyKey)) 
-            throw new ArgumentException("Idempotency key cannot be null or empty");
+        public IdempotencyRepository(IdempotencyDbContext context)
+        {
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+        }
 
-        return await _context.idempotencyKeyEntities
-            .AsNoTracking()
-            .AnyAsync(k => k.IdempotencyKey == key.IdempotencyKey)
-            .ConfigureAwait(false); 
-    }
+        public async Task<bool> ContainsIdempotencyKey(IdempotencyKeyEntity key)
+        {
+            if (key == null) throw new ArgumentNullException(nameof(key));
+            if (string.IsNullOrWhiteSpace(key.IdempotencyKey))
+                throw new ArgumentException("Idempotency key cannot be null or empty");
 
-    public async Task AddIdempotencyKey(IdempotencyKeyEntity key)
-    {
-        
+            return await _context.idempotencyKeyEntities
+                .AsNoTracking()
+                .AnyAsync(k => k.IdempotencyKey == key.IdempotencyKey);
+        }
+
+        public async Task AddIdempotencyKey(IdempotencyKeyEntity key)
+        {
+            if (key == null)
+                throw new ArgumentNullException(nameof(key));
+
+            if (string.IsNullOrWhiteSpace(key.IdempotencyKey))
+                throw new ArgumentException("Idempotency key cannot be empty", nameof(key.IdempotencyKey));
+
+            if (await ContainsIdempotencyKey(key))
+                return;
+
+            if (key.CreateDate == default)
+                key.CreateDate = DateTime.UtcNow;
+
+            await _context.idempotencyKeyEntities.AddAsync(key);
+            await _context.SaveChangesAsync();
+        }
     }
 }

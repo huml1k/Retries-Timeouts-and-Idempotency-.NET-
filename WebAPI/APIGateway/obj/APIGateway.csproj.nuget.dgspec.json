@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj": {}
+    "C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj": {
+    "C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj",
+        "projectUniqueName": "C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj",
         "projectName": "APIGateway",
-        "projectPath": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\obj\\",
+        "projectPath": "C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\APIGateway.csproj",
+        "packagesPath": "C:\\Users\\hum\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hum\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -54,6 +53,10 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.16, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -113,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

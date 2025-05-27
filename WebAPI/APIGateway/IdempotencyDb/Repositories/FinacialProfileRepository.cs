@@ -36,5 +36,13 @@ namespace APIGateway.IdempotencyDb.Repositories
                 throw new Exception("Такого пользователя не сущетсвует");
             }
         }
+
+        public async Task<FinancialProfile> GetFinancialProfile(Guid userId)
+        {
+            return await _context.financialProfiles
+                .AsNoTracking()
+                .Include(fp => fp.User)
+                .FirstOrDefaultAsync(fp => fp.UserId == userId);
+        }
     }
 }

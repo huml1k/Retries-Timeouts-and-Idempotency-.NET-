@@ -1,8 +1,8 @@
-name: dockercompose15456620557624572708
+name: dockercompose16709684492698290617
 services:
   apigateway:
     build:
-      context: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+      context: C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
       dockerfile: Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -35,7 +35,7 @@ services:
     ports:
       - mode: ingress
         target: 8080
-        published: "8080"
+        published: "8086"
         protocol: tcp
       - mode: ingress
         target: 8080
@@ -46,46 +46,46 @@ services:
     tty: true
     volumes:
       - type: bind
-        source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+        source: C:\Users\hum\AppData\Roaming\Microsoft\UserSecrets
         target: /home/app/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+        source: C:\Users\hum\AppData\Roaming\Microsoft\UserSecrets
         target: /root/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+        source: C:\Users\hum\AppData\Roaming\ASP.NET\Https
         target: /home/app/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+        source: C:\Users\hum\AppData\Roaming\ASP.NET\Https
         target: /root/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+        source: C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
         target: /app
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
+        source: C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\APIGateway
         target: /src
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\vsdbg\vs2017u5
+        source: C:\Users\hum\vsdbg\vs2017u5
         target: /remote_debugger
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\.nuget\packages
+        source: C:\Users\hum\.nuget\packages
         target: /.nuget/packages
         read_only: true
         bind:
@@ -110,7 +110,7 @@ services:
           create_host_path: true
   bankapi:
     build:
-      context: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+      context: C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
       dockerfile: Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -145,22 +145,22 @@ services:
     tty: true
     volumes:
       - type: bind
-        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+        source: C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
         target: /app
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
+        source: C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI
         target: /src
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\vsdbg\vs2017u5
+        source: C:\Users\hum\vsdbg\vs2017u5
         target: /remote_debugger
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\.nuget\packages
+        source: C:\Users\hum\.nuget\packages
         target: /.nuget/packages
         read_only: true
         bind:
@@ -172,25 +172,25 @@ services:
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+        source: C:\Users\hum\AppData\Roaming\ASP.NET\Https
         target: /root/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\AppData\Roaming\ASP.NET\Https
+        source: C:\Users\hum\AppData\Roaming\ASP.NET\Https
         target: /home/app/.aspnet/https
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+        source: C:\Users\hum\AppData\Roaming\Microsoft\UserSecrets
         target: /root/.microsoft/usersecrets
         read_only: true
         bind:
           create_host_path: true
       - type: bind
-        source: C:\Users\User\AppData\Roaming\Microsoft\UserSecrets
+        source: C:\Users\hum\AppData\Roaming\Microsoft\UserSecrets
         target: /home/app/.microsoft/usersecrets
         read_only: true
         bind:
@@ -225,11 +225,11 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: C:\Users\User\Desktop\фыв\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
+        source: C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\nginx\conf.d
         target: /etc/nginx/conf.d
         bind:
           create_host_path: true
 networks:
   app-network:
-    name: dockercompose15456620557624572708_app-network
+    name: dockercompose16709684492698290617_app-network
     driver: bridge

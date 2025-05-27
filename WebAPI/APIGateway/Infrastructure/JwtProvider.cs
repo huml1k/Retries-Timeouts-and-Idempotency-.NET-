@@ -13,10 +13,10 @@ namespace APIGateway.Infrastructure
 
         public string GenerateToken(UserEntity userEntity)
         {
-            Claim[] claims = [new("userid", userEntity.Id.ToString())];
+            Claim[] claims = [new("userId", userEntity.Id.ToString())];
 
             var signingCredentials = new SigningCredentials(
-                new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_option.SercretKey)),
+                new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_option.SecretKey)),
                 SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(

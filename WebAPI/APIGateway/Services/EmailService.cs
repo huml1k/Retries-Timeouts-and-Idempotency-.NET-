@@ -46,16 +46,30 @@ namespace APIGateway.Services
             return token;
         }
 
-        public async Task<Guid> GetUserByToken(ClaimsPrincipal claims)
+        public async Task<Guid?> GetUserByToken(ClaimsPrincipal claims)
         {
-            var userId = claims.Claims.FirstOrDefault(x => x.Type == "userId");
+            var userIdClaim = claims.Claims.FirstOrDefault(x => x.Type == "userId")?.Value;
 
-            if (userId == null)
+            if (string.IsNullOrEmpty(userIdClaim) || !Guid.TryParse(userIdClaim, out var userId))
             {
-                throw new Exception("Не авторизованный пользователь");
+                return null; // Возвращаем null, если нет userId или он некорректен
             }
 
-            return Guid.Parse(userId.Value);
+            return userId; // Возвращаем корректный userId
+        }
+
+        public async Task<UserEntity> GetByEmail(string email) 
+        {
+            var result = await _userRepository.GetByEmail(email);
+
+            return result;
+        }
+
+        public async Task<UserEntity> GetById(Guid id)
+        {
+            var result = await _userRepository.GetById(id);
+
+            return result;
         }
     }
 }

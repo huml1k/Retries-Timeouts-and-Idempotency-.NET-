@@ -9,5 +9,7 @@ namespace APIGateway.IdempotencyDb.Repositories.Interfaces
         public Task<UserEntity> GetEntity(UserEntity userEntity);
 
         public Task<UserEntity> GetByEmail(string email);
+
+        public Task<UserEntity> GetById(Guid id);
     }
 }

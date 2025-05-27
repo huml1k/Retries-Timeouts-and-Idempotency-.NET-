@@ -9,7 +9,7 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace APIGateway.Services;
 
-public class IdempotencyService 
+public class IdempotencyService : IIdempotencyService
 {
     private readonly IIdempotencyRepository _idempotencyRepository;
 
@@ -38,11 +38,17 @@ public class IdempotencyService
         _idempotencyRepository.AddIdempotencyKey(new IdempotencyKeyEntity());
     }
 
-    public async Task<string> GenerateIdempotencyKey(string userId, object requestBody)
+    public async Task<string> GenerateIdempotencyKey(string userId, HttpRequest request)
     {
-        var json = JsonSerializer.Serialize(requestBody);
+        // Читаем тело запроса как строку
+        request.EnableBuffering();
+        using var reader = new StreamReader(request.Body, Encoding.UTF8, leaveOpen: true);
+        var body = await reader.ReadToEndAsync();
+        request.Body.Position = 0;
+
+        // Генерируем хеш
         var sha256 = SHA256.Create();
-        var hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(userId + json));
+        var hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(userId + body));
         return Convert.ToHexString(hashBytes);
     }
 }

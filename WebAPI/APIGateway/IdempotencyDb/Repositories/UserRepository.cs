@@ -14,15 +14,9 @@ namespace APIGateway.IdempotencyDb.Repositories
         }
 
         public async Task Create(UserEntity userEntity)
-        {
-            var result = new UserEntity
-            {
-                Email = userEntity.Email,
-                Name = userEntity.Name,
-                Password = userEntity.Password
-            };
-
-            await _context.AddAsync(result);
+        {      
+            await _context.AddAsync(userEntity);
+            await _context.AddAsync(userEntity.FinancialProfile);
             await _context.SaveChangesAsync();
         }
 
@@ -31,6 +25,13 @@ namespace APIGateway.IdempotencyDb.Repositories
             return await _context.userEntities
                 .AsNoTracking()
                 .FirstOrDefaultAsync(x => x.Email == email);
+        }
+
+        public async Task<UserEntity> GetById(Guid id)
+        {
+            return await _context.userEntities
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<UserEntity> GetEntity(UserEntity userEntity)
