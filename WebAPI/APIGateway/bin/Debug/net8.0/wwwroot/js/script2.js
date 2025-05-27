@@ -25,7 +25,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
     const messageDiv = document.getElementById('login-message');
 
     try {
-        const response = await fetch('http://localhost:8086/api/Auth/login', {
+        const response = await fetch('http://localhost:5272/api/Auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ document.getElementById('register-form').addEventListener('submit', async functi
     }
 
     try {
-        const response = await fetch('http://localhost:8086/api/Auth/register', {
+        const response = await fetch('http://localhost:5272/api/Auth/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

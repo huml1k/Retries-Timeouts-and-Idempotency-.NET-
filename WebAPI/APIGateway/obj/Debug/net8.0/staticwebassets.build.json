@@ -1,1 +1,434 @@
-{"Version":1,"Hash":"25fsFdf52RlpFnAcX3NbbQJoVoXaivkCebaX/colEro=","Source":"APIGateway","BasePath":"_content/APIGateway","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[{"Name":"APIGateway\\wwwroot","Source":"APIGateway","ContentRoot":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\","BasePath":"_content/APIGateway","Pattern":"**"}],"Assets":[{"Identity":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js","SourceId":"APIGateway","SourceType":"Discovered","ContentRoot":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\","BasePath":"_content/APIGateway","RelativePath":"js/bankScripts#[.{fingerprint}]?.js","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"05x4vrjmjn","Integrity":"PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\js\\bankScripts.js","FileLength":2954,"LastWriteTime":"2025-05-19T18:18:24+00:00"},{"Identity":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\script2.js","SourceId":"APIGateway","SourceType":"Discovered","ContentRoot":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\","BasePath":"_content/APIGateway","RelativePath":"js/script2#[.{fingerprint}]?.js","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"y04gtpey8o","Integrity":"Yhk80ebhhntnRpAZD137G6KVcxkLOdKhxSxXRUADCjI=","CopyToOutputDirectory":"Always","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\js\\script2.js","FileLength":4488,"LastWriteTime":"2025-05-27T05:40:46+00:00"},{"Identity":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css","SourceId":"APIGateway","SourceType":"Discovered","ContentRoot":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\","BasePath":"_content/APIGateway","RelativePath":"styles/bankStyles#[.{fingerprint}]?.css","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"r7z8c44v2e","Integrity":"R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\styles\\bankStyles.css","FileLength":1723,"LastWriteTime":"2025-05-19T18:18:24+00:00"},{"Identity":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css","SourceId":"APIGateway","SourceType":"Discovered","ContentRoot":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\","BasePath":"_content/APIGateway","RelativePath":"styles/styles#[.{fingerprint}]?.css","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"dcl01e99yo","Integrity":"8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\styles\\styles.css","FileLength":2597,"LastWriteTime":"2025-05-19T18:18:24+00:00"}],"Endpoints":[{"Route":"js/bankScripts.05x4vrjmjn.js","AssetFile":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2954"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ=\""},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 18:18:24 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"05x4vrjmjn"},{"Name":"label","Value":"js/bankScripts.js"},{"Name":"integrity","Value":"sha256-PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ="}]},{"Route":"js/bankScripts.js","AssetFile":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2954"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ=\""},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 18:18:24 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-PAQcsupquyDViMyAQaz9qXG0mmIO4C6UYecdqd4YXcQ="}]},{"Route":"js/script2.js","AssetFile":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\script2.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"4488"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"Yhk80ebhhntnRpAZD137G6KVcxkLOdKhxSxXRUADCjI=\""},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 05:40:46 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-Yhk80ebhhntnRpAZD137G6KVcxkLOdKhxSxXRUADCjI="}]},{"Route":"js/script2.y04gtpey8o.js","AssetFile":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\script2.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"4488"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"Yhk80ebhhntnRpAZD137G6KVcxkLOdKhxSxXRUADCjI=\""},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 05:40:46 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"y04gtpey8o"},{"Name":"label","Value":"js/script2.js"},{"Name":"integrity","Value":"sha256-Yhk80ebhhntnRpAZD137G6KVcxkLOdKhxSxXRUADCjI="}]},{"Route":"styles/bankStyles.css","AssetFile":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1723"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk=\""},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 18:18:24 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk="}]},{"Route":"styles/bankStyles.r7z8c44v2e.css","AssetFile":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1723"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk=\""},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 18:18:24 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"r7z8c44v2e"},{"Name":"label","Value":"styles/bankStyles.css"},{"Name":"integrity","Value":"sha256-R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk="}]},{"Route":"styles/styles.css","AssetFile":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2597"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE=\""},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 18:18:24 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE="}]},{"Route":"styles/styles.dcl01e99yo.css","AssetFile":"C:\\Users\\hum\\Desktop\\зк\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2597"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE=\""},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 18:18:24 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"dcl01e99yo"},{"Name":"label","Value":"styles/styles.css"},{"Name":"integrity","Value":"sha256-8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE="}]}]}
+{
+  "Version": 1,
+  "Hash": "cHxYi8PpYnUHmaXbKIQEbswAO/MPbka648fZRoTq3hM=",
+  "Source": "APIGateway",
+  "BasePath": "_content/APIGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "APIGateway\\wwwroot",
+      "Source": "APIGateway",
+      "ContentRoot": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\",
+      "BasePath": "_content/APIGateway",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
+      "SourceId": "APIGateway",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\",
+      "BasePath": "_content/APIGateway",
+      "RelativePath": "js/bankScripts#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zb4f2jrj9s",
+      "Integrity": "UV7ZMJJ0yuWiWNUhRxIC5WQBoGgtzuwMHUdX4L2lZKY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bankScripts.js"
+    },
+    {
+      "Identity": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\script2.js",
+      "SourceId": "APIGateway",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\",
+      "BasePath": "_content/APIGateway",
+      "RelativePath": "js/script2#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hz2q4tc0g1",
+      "Integrity": "Y5Z5GaDMUS6FRvvYy5QMSwzB6im1gm2UAuPFJp0hFm8=",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\script2.js"
+    },
+    {
+      "Identity": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css",
+      "SourceId": "APIGateway",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\",
+      "BasePath": "_content/APIGateway",
+      "RelativePath": "styles/bankStyles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r7z8c44v2e",
+      "Integrity": "R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles\\bankStyles.css"
+    },
+    {
+      "Identity": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css",
+      "SourceId": "APIGateway",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\",
+      "BasePath": "_content/APIGateway",
+      "RelativePath": "styles/styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dcl01e99yo",
+      "Integrity": "8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles\\styles.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "js/bankScripts.js",
+      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2991"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UV7ZMJJ0yuWiWNUhRxIC5WQBoGgtzuwMHUdX4L2lZKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:07:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UV7ZMJJ0yuWiWNUhRxIC5WQBoGgtzuwMHUdX4L2lZKY="
+        }
+      ]
+    },
+    {
+      "Route": "js/bankScripts.zb4f2jrj9s.js",
+      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2991"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UV7ZMJJ0yuWiWNUhRxIC5WQBoGgtzuwMHUdX4L2lZKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 14:07:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zb4f2jrj9s"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bankScripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UV7ZMJJ0yuWiWNUhRxIC5WQBoGgtzuwMHUdX4L2lZKY="
+        }
+      ]
+    },
+    {
+      "Route": "js/script2.hz2q4tc0g1.js",
+      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\script2.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y5Z5GaDMUS6FRvvYy5QMSwzB6im1gm2UAuPFJp0hFm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 13:22:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hz2q4tc0g1"
+        },
+        {
+          "Name": "label",
+          "Value": "js/script2.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5Z5GaDMUS6FRvvYy5QMSwzB6im1gm2UAuPFJp0hFm8="
+        }
+      ]
+    },
+    {
+      "Route": "js/script2.js",
+      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\script2.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y5Z5GaDMUS6FRvvYy5QMSwzB6im1gm2UAuPFJp0hFm8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 May 2025 13:22:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5Z5GaDMUS6FRvvYy5QMSwzB6im1gm2UAuPFJp0hFm8="
+        }
+      ]
+    },
+    {
+      "Route": "styles/bankStyles.css",
+      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1723"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 18:05:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk="
+        }
+      ]
+    },
+    {
+      "Route": "styles/bankStyles.r7z8c44v2e.css",
+      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1723"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 18:05:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r7z8c44v2e"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/bankStyles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R4DEdWkbJ1Brh6N/PGppmv7/geNcq6TQvleriI/VlFk="
+        }
+      ]
+    },
+    {
+      "Route": "styles/styles.css",
+      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:44:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE="
+        }
+      ]
+    },
+    {
+      "Route": "styles/styles.dcl01e99yo.css",
+      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 13 May 2025 14:44:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dcl01e99yo"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8yq3ppHILFexE3Chh5rlrUwapAKrN3oanho+RctNUtE="
+        }
+      ]
+    }
+  ]
+}

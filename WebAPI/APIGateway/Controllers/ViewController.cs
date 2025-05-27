@@ -18,9 +18,10 @@ namespace APIGateway.Controllers
         private readonly EmailService _userService;
         private readonly FinacialProfileRepository _finacialProfileRepository;
 
-        public ViewController(EmailService userService)
+        public ViewController(EmailService userService, FinacialProfileRepository financialProfile)
         {
             _userService = userService;
+            _finacialProfileRepository = financialProfile;
         }
 
         [HttpGet("page")]
@@ -30,15 +31,14 @@ namespace APIGateway.Controllers
         public async Task<IActionResult> GetBankPage()
         {
             var userIdFromDb = _userService.GetUserByToken(User).Result.Value;
-
             if (string.IsNullOrEmpty(userIdFromDb.ToString()))
                 return RedirectToAction("GetAuthPage");
-
+            
             var user = await _userService.GetById(userIdFromDb);
-            var userId = user.Id;
 
-            // Получаем финансовый профиль
-            var financialProfile = await _finacialProfileRepository.GetFinancialProfile(userId);
+            
+
+            var financialProfile = await _finacialProfileRepository.GetFinancialProfile(userIdFromDb);
                
 
             var model = new BankViewModel

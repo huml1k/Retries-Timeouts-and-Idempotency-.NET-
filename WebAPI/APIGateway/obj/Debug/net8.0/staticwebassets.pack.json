@@ -1,19 +1,19 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
+      "Id": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
       "PackagePath": "staticwebassets\\js\\bankScripts.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\scripts.js",
-      "PackagePath": "staticwebassets\\js\\scripts.js"
+      "Id": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\script2.js",
+      "PackagePath": "staticwebassets\\js\\script2.js"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css",
+      "Id": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\bankStyles.css",
       "PackagePath": "staticwebassets\\styles\\bankStyles.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\фыв\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css",
+      "Id": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\styles\\styles.css",
       "PackagePath": "staticwebassets\\styles\\styles.css"
     },
     {

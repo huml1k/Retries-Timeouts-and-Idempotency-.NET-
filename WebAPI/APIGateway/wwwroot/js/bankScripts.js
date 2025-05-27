@@ -3,14 +3,15 @@ document.getElementById('creditForm').addEventListener('submit', async function 
     e.preventDefault();
 
     const formData = {
-        amount: parseFloat(this.querySelector('input[type="number"]').value
+        amount: parseFloat(this.querySelector('input[type="number"]').value)
     };
 
     try {
-        const response = await fetch(`http://localhost:8086/getBank`, {
+        const response = await fetch(`http://localhost:5272/api/Bank/pay`, {
             method: 'POST',
             headers: headers,
-            body: JSON.stringify(formData)
+            body: JSON.stringify({
+                amount: amount})
         });
 
         if (!response.ok) {
@@ -41,7 +42,7 @@ document.getElementById('transferForm').addEventListener('submit', async functio
     };
 
     try {
-        const response = await fetch(`http://localhost:8086/getBank`, {
+        const response = await fetch(`http://localhost:5272/api/Bank/pay`, {
             method: 'POST',
             headers: headers,
             body: JSON.stringify(formData)

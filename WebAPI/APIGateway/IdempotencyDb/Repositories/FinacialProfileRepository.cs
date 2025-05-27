@@ -20,6 +20,7 @@ namespace APIGateway.IdempotencyDb.Repositories
             await _context.AddAsync(result);
             await _context.SaveChangesAsync();
         }
+        
 
         public async Task<FinancialProfile> GetEntity(UserEntity userEntity)
         {
@@ -43,6 +44,35 @@ namespace APIGateway.IdempotencyDb.Repositories
                 .AsNoTracking()
                 .Include(fp => fp.User)
                 .FirstOrDefaultAsync(fp => fp.UserId == userId);
+        }
+
+        public async Task WriteOff(FinancialProfile profile, decimal amount)
+        {
+            if (profile == null)
+            {
+                throw new ArgumentNullException(nameof(profile));
+            }
+
+            if (amount <= 0)
+            {
+                throw new ArgumentException("Amount must be positive", nameof(amount));
+            }
+
+            if (profile.Balance < amount)
+            {
+                throw new InvalidOperationException("Insufficient funds for write-off");
+            }
+
+            try
+            {
+                profile.Balance -= amount;
+                _context.financialProfiles.Update(profile);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }
