@@ -37,6 +37,22 @@ namespace APIGateway.IdempotencyDb.Repositories
                 throw new Exception("Такого пользователя не сущетсвует");
             }
         }
+        
+        public async Task<FinancialProfile> GetEntityByAccountNumber(string accountNumber)
+        {
+            try
+            {
+                var financialProdileEnity = await _context.financialProfiles
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(x => x.AccountNumber == accountNumber);
+
+                return financialProdileEnity;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Такого пользователя не сущетсвует");
+            }
+        }
 
         public async Task<FinancialProfile> GetFinancialProfile(Guid userId)
         {
@@ -66,6 +82,30 @@ namespace APIGateway.IdempotencyDb.Repositories
             try
             {
                 profile.Balance -= amount;
+                _context.financialProfiles.Update(profile);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        
+        public async Task AddToBalance(FinancialProfile profile, decimal amount)
+        {
+            if (profile == null)
+            {
+                throw new ArgumentNullException(nameof(profile));
+            }
+
+            if (amount <= 0)
+            {
+                throw new ArgumentException("Amount must be positive", nameof(amount));
+            }
+            
+            try
+            {
+                profile.Balance += amount;
                 _context.financialProfiles.Update(profile);
                 await _context.SaveChangesAsync();
             }

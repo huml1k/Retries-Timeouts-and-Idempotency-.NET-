@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MMprllS5V0TFKQH7pCkbqUi6Rp+kQgrPkr6nDa0a5o4=",
+  "Hash": "xd4A+mSbkah4oAGsGmkpv0H/piTqZOC8qEOTEYiysgM=",
   "Source": "APIGateway",
   "BasePath": "_content/APIGateway",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rv1bfy62kh",
-      "Integrity": "R/XQbUPFwB9ZcWRPR2YbGi0gaJ+UH816c1Loc0X/+i8=",
+      "Fingerprint": "1ruqxgoy0z",
+      "Integrity": "LR+Vufym0714UUBME7MNP4W8ItYoSppkOB5H3+QrEWs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bankScripts.js"
@@ -103,6 +103,51 @@
   ],
   "Endpoints": [
     {
+      "Route": "js/bankScripts.1ruqxgoy0z.js",
+      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LR+Vufym0714UUBME7MNP4W8ItYoSppkOB5H3+QrEWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 21:02:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1ruqxgoy0z"
+        },
+        {
+          "Name": "label",
+          "Value": "js/bankScripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LR+Vufym0714UUBME7MNP4W8ItYoSppkOB5H3+QrEWs="
+        }
+      ]
+    },
+    {
       "Route": "js/bankScripts.js",
       "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
       "Selectors": [],
@@ -113,7 +158,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3053"
+          "Value": "3164"
         },
         {
           "Name": "Content-Type",
@@ -121,11 +166,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"R/XQbUPFwB9ZcWRPR2YbGi0gaJ+UH816c1Loc0X/+i8=\""
+          "Value": "\"LR+Vufym0714UUBME7MNP4W8ItYoSppkOB5H3+QrEWs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 15:16:56 GMT"
+          "Value": "Sun, 01 Jun 2025 21:02:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -135,52 +180,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-R/XQbUPFwB9ZcWRPR2YbGi0gaJ+UH816c1Loc0X/+i8="
-        }
-      ]
-    },
-    {
-      "Route": "js/bankScripts.rv1bfy62kh.js",
-      "AssetFile": "C:\\repos\\Retries-Timeouts-and-Idempotency-.NET-\\WebAPI\\APIGateway\\wwwroot\\js\\bankScripts.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3053"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"R/XQbUPFwB9ZcWRPR2YbGi0gaJ+UH816c1Loc0X/+i8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 15:16:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "rv1bfy62kh"
-        },
-        {
-          "Name": "label",
-          "Value": "js/bankScripts.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-R/XQbUPFwB9ZcWRPR2YbGi0gaJ+UH816c1Loc0X/+i8="
+          "Value": "sha256-LR+Vufym0714UUBME7MNP4W8ItYoSppkOB5H3+QrEWs="
         }
       ]
     },
@@ -207,7 +207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 13:22:53 GMT"
+          "Value": "Sun, 01 Jun 2025 19:56:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -252,7 +252,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 13:22:53 GMT"
+          "Value": "Sun, 01 Jun 2025 19:56:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -289,7 +289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 18:05:59 GMT"
+          "Value": "Sun, 01 Jun 2025 19:56:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -326,7 +326,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 18:05:59 GMT"
+          "Value": "Sun, 01 Jun 2025 19:56:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -371,7 +371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 14:44:26 GMT"
+          "Value": "Sun, 01 Jun 2025 19:56:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -408,7 +408,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 14:44:26 GMT"
+          "Value": "Sun, 01 Jun 2025 19:56:36 GMT"
         },
         {
           "Name": "Cache-Control",

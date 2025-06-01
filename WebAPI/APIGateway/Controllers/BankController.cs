@@ -31,7 +31,26 @@ public class BankController : Controller
         if (money.Amount <= financialProfile.Balance && money.Amount > 0)
         {
             await _finacialProfileRepository.WriteOff(financialProfile, money.Amount);
-            return Ok();
+            var a = financialProfile.Balance - money.Amount;
+            return Ok(new { newBalance = a });
+        }
+        return BadRequest();
+    }
+    
+    [HttpPost("transfer")]
+    public async Task<IActionResult> Transfer([FromBody] LoanPaymentContract tr)
+    {
+        var userIdFromDb = _userService.GetUserByToken(User).Result.Value;
+        var financialProfileFrom = await _finacialProfileRepository.GetFinancialProfile(userIdFromDb);
+        var financialProfileTo = await _finacialProfileRepository.GetFinancialProfile(userIdFromDb);
+
+
+        if (tr.Amount <= financialProfileFrom.Balance && tr.Amount > 0)
+        {
+            await _finacialProfileRepository.WriteOff(financialProfileFrom, tr.Amount);
+            await _finacialProfileRepository.AddToBalance(financialProfileTo, tr.Amount);
+            var newBalance = financialProfileFrom.Balance - tr.Amount;
+            return Ok(new { newBalance = newBalance });
         }
         return BadRequest();
     }

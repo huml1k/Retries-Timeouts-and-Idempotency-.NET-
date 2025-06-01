@@ -7,13 +7,14 @@ document.getElementById('creditForm').addEventListener('submit', async function 
     };
 
     try {
-        const response = await fetch(`http://localhost:5272/api/Bank/pay`, {
+        const response = await fetch(`http://localhost:5272/api/Bank/transfer`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                amount: amount})
+                amount: formData.amount  // Исправлено: используем formData.amount вместо amount
+            })
         });
 
         if (!response.ok) {

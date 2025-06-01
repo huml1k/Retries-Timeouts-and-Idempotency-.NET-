@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rv1bfy62kh</Fingerprint>
-      <Integrity>R/XQbUPFwB9ZcWRPR2YbGi0gaJ+UH816c1Loc0X/+i8=</Integrity>
+      <Fingerprint>1ruqxgoy0z</Fingerprint>
+      <Integrity>LR+Vufym0714UUBME7MNP4W8ItYoSppkOB5H3+QrEWs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bankScripts.js'))</OriginalItemSpec>
