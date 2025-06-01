@@ -23,7 +23,7 @@ public class BankController : Controller
     public async Task<IActionResult> GetAuthPage() => View("authPage");
 
     [HttpPost("pay")]
-    public async Task<IActionResult> PayLoan([FromBody] LoanContract money)
+    public async Task<IActionResult> PayLoan([FromBody] LoanPaymentContract money)
     {
         var userIdFromDb = _userService.GetUserByToken(User).Result.Value;
         var financialProfile = await _finacialProfileRepository.GetFinancialProfile(userIdFromDb);

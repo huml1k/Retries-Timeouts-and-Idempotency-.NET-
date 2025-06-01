@@ -9,7 +9,9 @@ document.getElementById('creditForm').addEventListener('submit', async function 
     try {
         const response = await fetch(`http://localhost:5272/api/Bank/pay`, {
             method: 'POST',
-            headers: headers,
+            headers: {
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify({
                 amount: amount})
         });

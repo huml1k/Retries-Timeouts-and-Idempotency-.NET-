@@ -3,14 +3,14 @@
     <StaticWebAssetEndpoint Include="_content/APIGateway/js/bankScripts.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bankScripts.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UV7ZMJJ0yuWiWNUhRxIC5WQBoGgtzuwMHUdX4L2lZKY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2991"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022UV7ZMJJ0yuWiWNUhRxIC5WQBoGgtzuwMHUdX4L2lZKY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 14:07:30 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-R/XQbUPFwB9ZcWRPR2YbGi0gaJ\u002BUH816c1Loc0X/\u002Bi8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3053"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022R/XQbUPFwB9ZcWRPR2YbGi0gaJ\u002BUH816c1Loc0X/\u002Bi8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 15:16:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/APIGateway/js/bankScripts.zb4f2jrj9s.js">
+    <StaticWebAssetEndpoint Include="_content/APIGateway/js/bankScripts.rv1bfy62kh.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\bankScripts.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zb4f2jrj9s"},{"Name":"integrity","Value":"sha256-UV7ZMJJ0yuWiWNUhRxIC5WQBoGgtzuwMHUdX4L2lZKY="},{"Name":"label","Value":"_content/APIGateway/js/bankScripts.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2991"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022UV7ZMJJ0yuWiWNUhRxIC5WQBoGgtzuwMHUdX4L2lZKY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 14:07:30 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rv1bfy62kh"},{"Name":"integrity","Value":"sha256-R/XQbUPFwB9ZcWRPR2YbGi0gaJ\u002BUH816c1Loc0X/\u002Bi8="},{"Name":"label","Value":"_content/APIGateway/js/bankScripts.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3053"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022R/XQbUPFwB9ZcWRPR2YbGi0gaJ\u002BUH816c1Loc0X/\u002Bi8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 15:16:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/APIGateway/js/script2.hz2q4tc0g1.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\script2.js'))</AssetFile>
