@@ -140,3 +140,37 @@ C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\
 C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.pdb
 C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.genruntimeconfig.cache
 C:\Users\hum\Desktop\зк\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\ref\BankAPI.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\appsettings.json
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\BankAPI.staticwebassets.endpoints.json
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\BankAPI.exe
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\BankAPI.deps.json
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\BankAPI.runtimeconfig.json
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\BankAPI.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\BankAPI.pdb
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\Polly.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\Polly.Core.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\Polly.Extensions.Http.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.AssemblyInfo.cs
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.sourcelink.json
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\scopedcss\bundle\BankAPI.styles.css
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.csproj.Up2Date
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\refint\BankAPI.dll
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.pdb
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\BankAPI.genruntimeconfig.cache
+C:\Users\User\Desktop\Новая папка\Retries-Timeouts-and-Idempotency-.NET-\WebAPI\BankAPI\obj\Debug\net8.0\ref\BankAPI.dll

@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "APIGateway\\APIGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BankAPI\\BankAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

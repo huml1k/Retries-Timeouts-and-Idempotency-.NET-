@@ -1,12 +1,43 @@
 [
   {
     "ContainingType": "BankAPI.Controllers.BankOperationController",
-    "Method": "GetResultAsync",
+    "Method": "HealthCheck",
+    "RelativePath": "BankOperation/health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankAPI.Controllers.BankOperationController",
+    "Method": "GetResult",
     "RelativePath": "BankOperation/Testing",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankAPI.Controllers.BankOperationController",
+    "Method": "PayToUser",
+    "RelativePath": "BankOperation/TestingPost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Single",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

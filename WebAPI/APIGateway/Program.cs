@@ -9,6 +9,9 @@ using APIGateway.Routes;
 using APIGateway.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Polly;
+using Polly.Retry;
+using Polly.Timeout;
 
 namespace APIGateway
 {
@@ -17,6 +20,16 @@ namespace APIGateway
         public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            
+            //Регистрация политик
+            
+            builder.Services.AddSingleton<AsyncRetryPolicy>(_ => 
+                Policy.Handle<Exception>()
+                    .WaitAndRetryAsync(3, retryAttempt => 
+                        TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))));
+
+            builder.Services.AddSingleton<AsyncTimeoutPolicy>(_ => 
+                Policy.TimeoutAsync(TimeSpan.FromSeconds(10)));
 
             // Конфигурация базы данных
             builder.Services.Configure<JwtOption>(builder.Configuration.GetSection(nameof(JwtOption)));
@@ -67,8 +80,8 @@ namespace APIGateway
 
             var app = builder.Build();
 
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
             app.UseCookiePolicy();
             app.UseCors("AllowAll");
             app.UseRouting();

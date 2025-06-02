@@ -1,4 +1,0 @@
-wwwroot\js\bankScripts.js
-wwwroot\js\scripts.js
-wwwroot\styles\bankStyles.css
-wwwroot\styles\styles.css
